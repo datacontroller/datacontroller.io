@@ -1,16 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: "Data Controller Site",
+    title: `Data Controller | Flexible and Secure SAS® Data Modification`,
+    description: `Data Controller for SAS® is dedicated to helping users, admins and developers manage their data. A zero code approach with Data Lineage, Catalog, Dictionary, Validation, Workflow, Alerts and more.`,
+    siteUrl: "https://datacontroller.io/",
+    author: {
+      name: `Allan Bowe`,
+      summary: ``,
+    },
+    social: {
+      linkedin: `https://www.linkedin.com/showcase/data_controller/`,
+    },
   },
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "",
-      },
-    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
