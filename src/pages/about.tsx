@@ -13,17 +13,17 @@ type DataProps = {
   };
 };
 
-const Home: React.FC<PageProps<DataProps>> = ({ data, location }) => {
+const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
   return (
     <Layout
       location={location}
-      title="Flexible and Secure Data Modification"
-      desc="Data Controller for SAS® enables business users to update IT owned source tables, secured by review / approve workflow and full audit trail."
+      title="Behind Data Controller"
+      desc="Data Controller is a product of Analytium Ltd."
     ></Layout>
   );
 };
 
-export default Home;
+export default About;
 
 export const query = graphql`
   {

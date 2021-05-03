@@ -1,116 +1,56 @@
 import React from "react";
 import { Link, PageProps } from "gatsby";
 
-import styled, { css } from "styled-components";
-
 import dcLogo from "../../images/dclogo.png";
 
-type DataProps = {
-  location: Location;
-};
-
-// styles
-const navBarStyles = {
-  padding: "0",
-  backgroundColor: "#314351",
-  color: "white",
-  fontSize: "0.85rem",
-};
-const logoStyles = {
-  height: "55px",
-};
-const ulStyles = {
-  marginLeft: "auto",
-};
+import { navBarStyles, logoStyles, ulStyles, Li, StyledLink } from "./styles";
 
 const naviLinks = [
   {
     name: "Home",
     url: "/",
-    active: false,
+    active: "no",
   },
   {
     name: "About",
     url: "/about",
-    active: false,
+    active: "no",
   },
   {
     name: "Blog",
     url: "/blog",
-    active: false,
+    active: "no",
   },
   {
     name: "FAQ",
     url: "/faq",
-    active: false,
+    active: "no",
   },
   {
     name: "Documentation",
     url: "https://docs.datacontroller.io/",
-    active: false,
+    active: "no",
   },
   {
     name: "Pricing",
     url: "/pricing",
-    active: false,
+    active: "no",
   },
   {
     name: "Book Demo",
     url: "/contact",
-    active: false,
+    active: "no",
   },
 ];
 
-const Li = styled.li`
-  position: relative;
-  @media (min-width: 992px) {
-    &:after {
-      content: " ";
-      position: absolute;
-      width: 1px;
-      height: 50%;
-      top: 25%;
-      right: 0;
-      background: white;
-    }
-    &:nth-last-child(1) {
-      &:after {
-        display: none;
-      }
-    }
-  }
-`;
-
-export const LinkUnderlineStyles = css`
-  content: " ";
-  position: absolute;
-  width: calc(100% - 1.6rem);
-  height: 2px;
-  bottom: 0;
-  background: white;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-`;
-const StyledLink = styled((props) => <Link {...props} />)`
-  padding-right: 0.8rem !important;
-  padding-left: 0.8rem !important;
-  color: white;
-
-  &:before {
-    ${LinkUnderlineStyles}
-    opacity: ${(props) => (props.active ? "1" : 0)};
-  }
-  &:hover {
-    color: white;
-    &:before {
-      ${LinkUnderlineStyles}
-    }
-  }
-`;
+type DataProps = {
+  location: Location;
+};
 
 const Navibar: React.FC<PageProps<DataProps>> = ({ location }) => {
-  const currentLink = naviLinks.find((link) => link.url === location.pathname);
-  if (currentLink) currentLink.active = true;
+  naviLinks.forEach((link) => (link.active = "no"));
+  const currentLink = naviLinks.find((link) => link.url === location?.pathname);
+  if (currentLink) currentLink.active = "yes";
   return (
     <nav className="navbar navbar-expand-lg" style={navBarStyles}>
       <div className="container">
