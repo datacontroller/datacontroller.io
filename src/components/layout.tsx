@@ -1,18 +1,17 @@
 import React from "react";
+import { PageProps } from "gatsby";
 
-// import Navibar from '../navibar/navibar'
+import Navibar from "./navibar";
 // import Footer from '../footer/footer'
 
-interface Props {
+type DataProps = {
   children?: React.ReactNode;
-}
+};
 
-const Layout: React.FC<Props> = ({ children }: Props) => {
+const Layout: React.FC<PageProps<DataProps>> = ({ children }) => {
   return (
-    <div className="container">
-      {/*<Navibar location={location} />*/}
-      {/*<Footer />*/}
-    </div>
+    <Navibar location={location} />
+    // {/*<Footer />*/}
   );
 };
 
