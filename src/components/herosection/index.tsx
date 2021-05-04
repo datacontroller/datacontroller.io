@@ -3,7 +3,7 @@ import { PageProps } from "gatsby";
 
 import styled from "styled-components";
 
-import { Hero, HeroHeading, HeroDesc, StyledButton } from "./styles";
+import { Hero, HeroHeading, HeroDesc, StyledButton } from "./style";
 import { BottomSectionArrow } from "../shared/styledComponents";
 import { Container } from "../shared";
 

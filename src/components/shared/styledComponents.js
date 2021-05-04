@@ -25,5 +25,5 @@ export const SectionHeading = styled.h2`
 
 export const SectionDesc = styled.p`
   text-align: center;
-  opacity: 0.7;
+  opacity: 0.6;
 `;

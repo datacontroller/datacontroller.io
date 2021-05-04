@@ -4,7 +4,7 @@ import { Link, PageProps } from "gatsby";
 import dcLogo from "../../images/dclogo.png";
 
 import { Container } from "../shared";
-import { navBarStyles, logoStyles, ulStyles, Li, StyledLink } from "./styles";
+import { navBarStyles, logoStyles, ulStyles, Li, StyledLink } from "./style";
 
 const naviLinks = [
   {
