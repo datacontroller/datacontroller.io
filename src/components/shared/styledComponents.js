@@ -15,7 +15,7 @@ export const BottomSectionArrow = styled.div`
 `;
 
 export const SectionHeading = styled.h2`
-  text-align: center;
+  text-align: ${(props) => (props.center === "no" ? "left" : "center")};
   letter-spacing: 1px;
   font-weight: 400;
   font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
@@ -24,6 +24,6 @@ export const SectionHeading = styled.h2`
 `;
 
 export const SectionDesc = styled.p`
-  text-align: center;
+  text-align: ${(props) => (props.center === "no" ? "left" : "center")};
   opacity: 0.6;
 `;
