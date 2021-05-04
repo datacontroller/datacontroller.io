@@ -9,6 +9,7 @@ type DataProps = {
   children?: React.ReactNode;
   color?: string;
   bgColor?: string;
+  bottomArrow?: boolean;
 };
 
 const StyledSection = styled.div`
@@ -22,11 +23,12 @@ export const Section: React.FC<PageProps<DataProps>> = ({
   children,
   bgColor,
   color,
+  bottomArrow = true,
 }) => {
   return (
     <StyledSection bgColor={bgColor} color={color}>
       <Container>{children}</Container>
-      <BottomSectionArrow />
+      {bottomArrow && <BottomSectionArrow />}
     </StyledSection>
   );
 };
