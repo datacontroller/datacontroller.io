@@ -13,7 +13,8 @@ const Layout: React.FC<PageProps<DataProps>> = ({ children, title, desc }) => {
   return (
     <>
       <Navibar location={location} />
-      <HeroSection title={title} desc={desc} />
+      <HeroSection location={location} title={title} desc={desc} />
+      {children}
     </>
     // {/*<Footer />*/}
   );

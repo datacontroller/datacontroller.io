@@ -3,6 +3,7 @@ import { Link, PageProps } from "gatsby";
 
 import dcLogo from "../../images/dclogo.png";
 
+import { Container } from "../shared";
 import { navBarStyles, logoStyles, ulStyles, Li, StyledLink } from "./styles";
 
 const naviLinks = [
@@ -53,7 +54,7 @@ const Navibar: React.FC<PageProps<DataProps>> = ({ location }) => {
   if (currentLink) currentLink.active = "yes";
   return (
     <nav className="navbar navbar-expand-lg" style={navBarStyles}>
-      <div className="container">
+      <Container>
         <Link to="/">
           <img src={dcLogo} style={logoStyles} alt="Data Controller Logo" />
         </Link>
@@ -69,7 +70,7 @@ const Navibar: React.FC<PageProps<DataProps>> = ({ location }) => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={ulStyles}>
+          <ul className="navbar-nav mb-2 mb-lg-0" style={ulStyles}>
             {naviLinks.map((link, index) => (
               <Li key={index} className="nav-item">
                 <StyledLink
@@ -83,7 +84,7 @@ const Navibar: React.FC<PageProps<DataProps>> = ({ location }) => {
             ))}
           </ul>
         </div>
-      </div>
+      </Container>
     </nav>
   );
 };
