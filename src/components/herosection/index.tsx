@@ -20,11 +20,11 @@ const HeroSection: React.FC<PageProps<DataProps>> = ({
   title,
   desc
 }) => (
-  <Hero bg={location.pathname === (pathPrefix || '/')}>
+  <Hero bg={location.pathname === pathPrefix + '/'}>
     <Container>
       <HeroHeading>{title}</HeroHeading>
       <HeroDesc>{desc}</HeroDesc>
-      {location.pathname === (pathPrefix || '/') && (
+      {location.pathname === pathPrefix + '/' && (
         <StyledButton>Try Data Controller</StyledButton>
       )}
     </Container>
