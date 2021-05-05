@@ -10,9 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Install dependencies
-        run: npm ci
-
       - name: Check prettier offences
         run: npm run lint
 

@@ -9,7 +9,12 @@ type DataProps = {
   children?: React.ReactNode
 }
 
-const Layout: React.FC<PageProps<DataProps>> = ({ children, title, desc }) => {
+const Layout: React.FC<PageProps<DataProps>> = ({
+  location,
+  children,
+  title,
+  desc
+}) => {
   return (
     <>
       <Navibar location={location} />
