@@ -1,5 +1,7 @@
-import { PageProps, Link, graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import React from "react";
+import Gallery from "@browniebroke/gatsby-image-gallery";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 
@@ -21,17 +23,46 @@ import { MdHistory } from "react-icons/md";
 import { BsCode } from "react-icons/bs";
 import { BiNetworkChart } from "react-icons/bi";
 
-type DataProps = {
-  site: {
-    meta: {
-      title: string;
-      description: string;
-      social: { linkedin: string };
+import dcDesign from "../images/data-controller-design.png";
+
+interface ImageSharpEdge {
+  node: {
+    childImageSharp: {
+      thumb: IGatsbyImageData;
+      full: IGatsbyImageData;
+      meta: {
+        originalName: string;
+      };
     };
   };
-};
+}
 
-const Home: React.FC<PageProps<DataProps>> = ({ data, location }) => {
+interface PageProps {
+  data: {
+    images: {
+      edges: ImageSharpEdge[];
+    };
+  };
+}
+
+const Home: React.FC<PageProps> = ({ data, location }) => {
+  const images = data.images.edges.map(({ node }) => ({
+    ...node.childImageSharp,
+    // Use original name as caption.
+    // The `originalName` is queried in a nested field,
+    // but the `Gallery` component expects `caption` at the top level.
+    caption: node.childImageSharp.meta.originalName,
+  }));
+
+  // Override some of Lightbox options to localise labels in French
+  const lightboxOptions = {
+    imageLoadErrorMessage: "Impossible de charger cette image",
+    nextLabel: "Image suivante",
+    prevLabel: "Image précédente",
+    zoomInLabel: "Zoomer",
+    zoomOutLabel: "Dézoomer",
+    closeLabel: "Fermer",
+  };
   return (
     <Layout
       location={location}
@@ -192,15 +223,13 @@ const Home: React.FC<PageProps<DataProps>> = ({ data, location }) => {
               security, gives you full flexibility and location independence
               when managing your data.
             </SectionDesc>
+            <Art src={dcDesign} info="Data Controller Design" />
           </div>
         </div>
       </Section>
       <Section color="black" bgColor="white">
-        <div className="row">
-          <div className="offset-md-2 col-md-8">
-            <SectionHeading>See How it Looks</SectionHeading>
-          </div>
-        </div>
+        <SectionHeading>See How it Looks</SectionHeading>
+        <Gallery images={images} lightboxOptions={lightboxOptions} gutter={0} />
       </Section>
       <ScheduleDemo />
     </Layout>
@@ -209,14 +238,25 @@ const Home: React.FC<PageProps<DataProps>> = ({ data, location }) => {
 
 export default Home;
 
-export const query = graphql`
-  {
-    site {
-      meta: siteMetadata {
-        title
-        description
-        social {
-          linkedin
+export const pageQuery = graphql`
+  query ImagesForGallery {
+    images: allFile(
+      filter: { relativeDirectory: { eq: "gallery" } }
+      sort: { fields: name }
+    ) {
+      edges {
+        node {
+          childImageSharp {
+            thumb: gatsbyImageData(
+              width: 300
+              height: 270
+              placeholder: BLURRED
+            )
+            full: gatsbyImageData(layout: FULL_WIDTH)
+            meta: fixed {
+              originalName
+            }
+          }
         }
       }
     }

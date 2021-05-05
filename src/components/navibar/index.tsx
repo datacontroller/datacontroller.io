@@ -4,7 +4,7 @@ import { Link, PageProps } from "gatsby";
 import dcLogo from "../../images/dclogo.png";
 
 import { Container } from "../shared";
-import { navBarStyles, logoStyles, ulStyles, Li, StyledLink } from "./style";
+import { logoStyles, CustomNavBar, ulStyles, Li, StyledLink } from "./style";
 
 const naviLinks = [
   {
@@ -53,13 +53,13 @@ const Navibar: React.FC<PageProps<DataProps>> = ({ location }) => {
   const currentLink = naviLinks.find((link) => link.url === location?.pathname);
   if (currentLink) currentLink.active = "yes";
   return (
-    <nav className="navbar navbar-expand-lg" style={navBarStyles}>
+    <CustomNavBar className="navbar navbar-expand-lg">
       <Container>
         <Link to="/">
           <img src={dcLogo} style={logoStyles} alt="Data Controller Logo" />
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler collapsed"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -67,7 +67,11 @@ const Navibar: React.FC<PageProps<DataProps>> = ({ location }) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <div className="navbar-toggler-icon" id="nav-icon4">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0" style={ulStyles}>
@@ -85,7 +89,7 @@ const Navibar: React.FC<PageProps<DataProps>> = ({ location }) => {
           </ul>
         </div>
       </Container>
-    </nav>
+    </CustomNavBar>
   );
 };
 
