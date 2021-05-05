@@ -1,48 +1,48 @@
-import { Link, graphql } from "gatsby";
-import React from "react";
-import Gallery from "@browniebroke/gatsby-image-gallery";
-import { IGatsbyImageData } from "gatsby-plugin-image";
+import { Link, graphql } from 'gatsby'
+import React from 'react'
+import Gallery from '@browniebroke/gatsby-image-gallery'
+import { IGatsbyImageData } from 'gatsby-plugin-image'
 
-import Layout from "../components/layout";
+import Layout from '../components/layout'
 
-import { Section, ScheduleDemo } from "../components/shared";
+import { Section, ScheduleDemo } from '../components/shared'
 import {
   SectionHeading,
-  SectionDesc,
-} from "../components/shared/styledComponents";
-import { Art, Reason, CenteredText, Feature } from "../styledComponents";
+  SectionDesc
+} from '../components/shared/styledComponents'
+import { Art, Reason, CenteredText, Feature } from '../styledComponents'
 
-import leftArt from "../images/home_illustration2.png";
-import rightArt from "../images/home_illustration1.png";
-import dcSoftwareArt from "../images/dc-software.png";
+import leftArt from '../images/home_illustration2.png'
+import rightArt from '../images/home_illustration1.png'
+import dcSoftwareArt from '../images/dc-software.png'
 
-import { AiOutlineClockCircle, AiFillLock } from "react-icons/ai";
-import { TiTick } from "react-icons/ti";
-import { HiOutlineRefresh } from "react-icons/hi";
-import { MdHistory } from "react-icons/md";
-import { BsCode } from "react-icons/bs";
-import { BiNetworkChart } from "react-icons/bi";
+import { AiOutlineClockCircle, AiFillLock } from 'react-icons/ai'
+import { TiTick } from 'react-icons/ti'
+import { HiOutlineRefresh } from 'react-icons/hi'
+import { MdHistory } from 'react-icons/md'
+import { BsCode } from 'react-icons/bs'
+import { BiNetworkChart } from 'react-icons/bi'
 
-import dcDesign from "../images/data-controller-design.png";
+import dcDesign from '../images/data-controller-design.png'
 
 interface ImageSharpEdge {
   node: {
     childImageSharp: {
-      thumb: IGatsbyImageData;
-      full: IGatsbyImageData;
+      thumb: IGatsbyImageData
+      full: IGatsbyImageData
       meta: {
-        originalName: string;
-      };
-    };
-  };
+        originalName: string
+      }
+    }
+  }
 }
 
 interface PageProps {
   data: {
     images: {
-      edges: ImageSharpEdge[];
-    };
-  };
+      edges: ImageSharpEdge[]
+    }
+  }
 }
 
 const Home: React.FC<PageProps> = ({ data, location }) => {
@@ -51,18 +51,18 @@ const Home: React.FC<PageProps> = ({ data, location }) => {
     // Use original name as caption.
     // The `originalName` is queried in a nested field,
     // but the `Gallery` component expects `caption` at the top level.
-    caption: node.childImageSharp.meta.originalName,
-  }));
+    caption: node.childImageSharp.meta.originalName
+  }))
 
   // Override some of Lightbox options to localise labels in French
   const lightboxOptions = {
-    imageLoadErrorMessage: "Impossible de charger cette image",
-    nextLabel: "Image suivante",
-    prevLabel: "Image précédente",
-    zoomInLabel: "Zoomer",
-    zoomOutLabel: "Dézoomer",
-    closeLabel: "Fermer",
-  };
+    imageLoadErrorMessage: 'Impossible de charger cette image',
+    nextLabel: 'Image suivante',
+    prevLabel: 'Image précédente',
+    zoomInLabel: 'Zoomer',
+    zoomOutLabel: 'Dézoomer',
+    closeLabel: 'Fermer'
+  }
   return (
     <Layout
       location={location}
@@ -233,10 +233,10 @@ const Home: React.FC<PageProps> = ({ data, location }) => {
       </Section>
       <ScheduleDemo />
     </Layout>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
 
 export const pageQuery = graphql`
   query ImagesForGallery {
@@ -261,4 +261,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

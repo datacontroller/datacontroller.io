@@ -1,33 +1,33 @@
-import React from "react";
-import { PageProps } from "gatsby";
+import React from 'react'
+import { PageProps } from 'gatsby'
 
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { Hero, HeroHeading, HeroDesc, StyledButton } from "./style";
-import { BottomSectionArrow } from "../shared/styledComponents";
-import { Container } from "../shared";
+import { Hero, HeroHeading, HeroDesc, StyledButton } from './style'
+import { BottomSectionArrow } from '../shared/styledComponents'
+import { Container } from '../shared'
 
 type DataProps = {
-  location: Location;
-  title: string;
-  desc: string;
-};
+  location: Location
+  title: string
+  desc: string
+}
 
 const HeroSection: React.FC<PageProps<DataProps>> = ({
   location,
   title,
-  desc,
+  desc
 }) => (
-  <Hero bg={location.pathname === "/"}>
+  <Hero bg={location.pathname === '/'}>
     <Container>
       <HeroHeading>{title}</HeroHeading>
       <HeroDesc>{desc}</HeroDesc>
-      {location.pathname === "/" && (
+      {location.pathname === '/' && (
         <StyledButton>Try Data Controller</StyledButton>
       )}
     </Container>
     <BottomSectionArrow />
   </Hero>
-);
+)
 
-export default HeroSection;
+export default HeroSection

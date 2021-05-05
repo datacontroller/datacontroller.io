@@ -1,14 +1,14 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import { Link } from "gatsby";
+import React from 'react'
+import styled, { css } from 'styled-components'
+import { Link } from 'gatsby'
 
 // styles
 export const logoStyles = {
-  height: "55px",
-};
+  height: '55px'
+}
 export const ulStyles = {
-  marginLeft: "auto",
-};
+  marginLeft: 'auto'
+}
 
 export const CustomNavBar = styled.nav`
   padding: 0;
@@ -282,10 +282,10 @@ export const CustomNavBar = styled.nav`
       box-shadow: none;
     }
   }
-`;
+`
 
 const LinkUnderlineStyles = css`
-  content: " ";
+  content: ' ';
   position: absolute;
   width: calc(100% - 1.6rem);
   height: 2px;
@@ -293,14 +293,14 @@ const LinkUnderlineStyles = css`
   background: white;
   opacity: 1;
   transition: opacity 0.3s ease;
-`;
+`
 
 // styled components
 export const Li = styled.li`
   position: relative;
   @media (min-width: 992px) {
     &:after {
-      content: " ";
+      content: ' ';
       position: absolute;
       width: 1px;
       height: 50%;
@@ -314,7 +314,7 @@ export const Li = styled.li`
       }
     }
   }
-`;
+`
 export const StyledLink = styled((props) => <Link {...props} />)`
   padding-right: 0.8rem !important;
   padding-left: 0.8rem !important;
@@ -322,7 +322,7 @@ export const StyledLink = styled((props) => <Link {...props} />)`
 
   &:before {
     ${LinkUnderlineStyles}
-    opacity: ${(props) => (props.active === "yes" ? "1" : 0)};
+    opacity: ${(props) => (props.active === 'yes' ? '1' : 0)};
   }
   &:hover {
     color: white;
@@ -330,4 +330,4 @@ export const StyledLink = styled((props) => <Link {...props} />)`
       ${LinkUnderlineStyles}
     }
   }
-`;
+`

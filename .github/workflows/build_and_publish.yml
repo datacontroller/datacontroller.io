@@ -1,0 +1,23 @@
+name: Gatsby Publish
+
+on:
+  push:
+    branches: main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check prettier offences
+        run: npm run lint
+
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: ${{ secrets.SASAPPS_SECRET }}
+          deploy-branch: gh-pages
+          gatsby-args: --prefix-paths

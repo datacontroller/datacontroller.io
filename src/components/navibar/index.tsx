@@ -1,57 +1,57 @@
-import React from "react";
-import { Link, PageProps } from "gatsby";
+import React from 'react'
+import { Link, PageProps } from 'gatsby'
 
-import dcLogo from "../../images/dclogo.png";
+import dcLogo from '../../images/dclogo.png'
 
-import { Container } from "../shared";
-import { logoStyles, CustomNavBar, ulStyles, Li, StyledLink } from "./style";
+import { Container } from '../shared'
+import { logoStyles, CustomNavBar, ulStyles, Li, StyledLink } from './style'
 
 const naviLinks = [
   {
-    name: "Home",
-    url: "/",
-    active: "no",
+    name: 'Home',
+    url: '/',
+    active: 'no'
   },
   {
-    name: "About",
-    url: "/about",
-    active: "no",
+    name: 'About',
+    url: '/about',
+    active: 'no'
   },
   {
-    name: "Blog",
-    url: "/blog",
-    active: "no",
+    name: 'Blog',
+    url: '/blog',
+    active: 'no'
   },
   {
-    name: "FAQ",
-    url: "/faq",
-    active: "no",
+    name: 'FAQ',
+    url: '/faq',
+    active: 'no'
   },
   {
-    name: "Documentation",
-    url: "https://docs.datacontroller.io/",
-    active: "no",
+    name: 'Documentation',
+    url: 'https://docs.datacontroller.io/',
+    active: 'no'
   },
   {
-    name: "Pricing",
-    url: "/pricing",
-    active: "no",
+    name: 'Pricing',
+    url: '/pricing',
+    active: 'no'
   },
   {
-    name: "Book Demo",
-    url: "/contact",
-    active: "no",
-  },
-];
+    name: 'Book Demo',
+    url: '/contact',
+    active: 'no'
+  }
+]
 
 type DataProps = {
-  location: Location;
-};
+  location: Location
+}
 
 const Navibar: React.FC<PageProps<DataProps>> = ({ location }) => {
-  naviLinks.forEach((link) => (link.active = "no"));
-  const currentLink = naviLinks.find((link) => link.url === location?.pathname);
-  if (currentLink) currentLink.active = "yes";
+  naviLinks.forEach((link) => (link.active = 'no'))
+  const currentLink = naviLinks.find((link) => link.url === location?.pathname)
+  if (currentLink) currentLink.active = 'yes'
   return (
     <CustomNavBar className="navbar navbar-expand-lg">
       <Container>
@@ -90,7 +90,7 @@ const Navibar: React.FC<PageProps<DataProps>> = ({ location }) => {
         </div>
       </Container>
     </CustomNavBar>
-  );
-};
+  )
+}
 
-export default Navibar;
+export default Navibar

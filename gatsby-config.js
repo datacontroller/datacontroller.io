@@ -11,6 +11,7 @@ module.exports = {
       linkedin: `https://www.linkedin.com/showcase/data_controller/`,
     },
   },
+  pathPrefix: "/",
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",

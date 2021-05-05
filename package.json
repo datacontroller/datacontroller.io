@@ -12,7 +12,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "npx prettier --check \"src/**/*.+(ts|tsx|js|jsx|json|css|scss)\"",
+    "lint:fix": "npx prettier --write \"src/**/*.+(ts|tsx|js|jsx|json|css|scss)\" --ignore-path .gitignore"
   },
   "dependencies": {
     "@browniebroke/gatsby-image-gallery": "^6.2.0",

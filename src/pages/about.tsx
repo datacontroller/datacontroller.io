@@ -1,117 +1,117 @@
-import { PageProps, Link, graphql } from "gatsby";
-import React from "react";
+import { PageProps, Link, graphql } from 'gatsby'
+import React from 'react'
 
-import Layout from "../components/layout";
+import Layout from '../components/layout'
 
-import { Section } from "../components/shared";
+import { Section } from '../components/shared'
 import {
   SectionHeading,
-  SectionDesc,
-} from "../components/shared/styledComponents";
+  SectionDesc
+} from '../components/shared/styledComponents'
 
 import {
   Card,
   CardImg,
   CardBody,
   FeaturedImg,
-  FeaturedDesc,
-} from "../styledComponents/about";
+  FeaturedDesc
+} from '../styledComponents/about'
 
-import sasenseiLogo from "../images/sasapps/sasensei.png";
-import rubyLogo from "../images/sasapps/ruby.png";
-import pygrailLogo from "../images/sasapps/pygrail.png";
-import pilotLogo from "../images/sasapps/pilot.png";
-import yogaLogo from "../images/sasapps/yoga.png";
-import jsLogo from "../images/sasapps/js.png";
-import serbianLogo from "../images/sasapps/serbian.png";
-import quizrLogo from "../images/sasapps/quizr.png";
-import cdoquizLogo from "../images/sasapps/cdoquiz.png";
-import insureLogo from "../images/sasapps/insure.png";
+import sasenseiLogo from '../images/sasapps/sasensei.png'
+import rubyLogo from '../images/sasapps/ruby.png'
+import pygrailLogo from '../images/sasapps/pygrail.png'
+import pilotLogo from '../images/sasapps/pilot.png'
+import yogaLogo from '../images/sasapps/yoga.png'
+import jsLogo from '../images/sasapps/js.png'
+import serbianLogo from '../images/sasapps/serbian.png'
+import quizrLogo from '../images/sasapps/quizr.png'
+import cdoquizLogo from '../images/sasapps/cdoquiz.png'
+import insureLogo from '../images/sasapps/insure.png'
 
-import sasenseiFeatured from "../images/sasensei_featured.png";
+import sasenseiFeatured from '../images/sasensei_featured.png'
 
 type DataProps = {
   site: {
     meta: {
-      title: string;
-      description: string;
-      social: { linkedin: string };
-    };
-  };
-};
+      title: string
+      description: string
+      social: { linkedin: string }
+    }
+  }
+}
 
 const SasApps = [
   {
-    name: "Sasensei",
-    desc: "Sasensei. SAS Software Quiz, Challenge, Compete & Learn",
-    link: "https://sasensei.com",
-    themeColor: "#2196F3",
-    logo: sasenseiLogo,
+    name: 'Sasensei',
+    desc: 'Sasensei. SAS Software Quiz, Challenge, Compete & Learn',
+    link: 'https://sasensei.com',
+    themeColor: '#2196F3',
+    logo: sasenseiLogo
   },
   {
-    name: "Ruby",
-    desc: "Ruby Cards - a Community Quiz Game for Rubyists",
-    link: "https://ruby.cards",
-    themeColor: "#aa1502",
-    logo: rubyLogo,
+    name: 'Ruby',
+    desc: 'Ruby Cards - a Community Quiz Game for Rubyists',
+    link: 'https://ruby.cards',
+    themeColor: '#aa1502',
+    logo: rubyLogo
   },
   {
-    name: "PyGrail",
-    desc: "PyGrail - a Community Quiz Game for Monty Pythonistas",
-    link: "https://pygrail.com",
-    themeColor: "#efbf2c",
-    logo: pygrailLogo,
+    name: 'PyGrail',
+    desc: 'PyGrail - a Community Quiz Game for Monty Pythonistas',
+    link: 'https://pygrail.com',
+    themeColor: '#efbf2c',
+    logo: pygrailLogo
   },
   {
-    name: "Pilot",
-    desc: "Pilot Cards Leaderboard - How High Can You Climb?",
-    link: "https://pilot.cards",
-    themeColor: "#446ff3",
-    logo: pilotLogo,
+    name: 'Pilot',
+    desc: 'Pilot Cards Leaderboard - How High Can You Climb?',
+    link: 'https://pilot.cards',
+    themeColor: '#446ff3',
+    logo: pilotLogo
   },
   {
-    name: "Yoga.cards",
-    desc: "Yoga Cards - a Community Quiz Game for Student Yogis",
-    link: "https://yoga.cards",
-    themeColor: "#6d69fb",
-    logo: yogaLogo,
+    name: 'Yoga.cards',
+    desc: 'Yoga Cards - a Community Quiz Game for Student Yogis',
+    link: 'https://yoga.cards',
+    themeColor: '#6d69fb',
+    logo: yogaLogo
   },
   {
-    name: "JS.cards",
-    desc: "JS Cards - a Community Quiz Game for JavaScript Ninjas",
-    link: "https://js.cards",
-    themeColor: "#00cc99",
-    logo: jsLogo,
+    name: 'JS.cards',
+    desc: 'JS Cards - a Community Quiz Game for JavaScript Ninjas',
+    link: 'https://js.cards',
+    themeColor: '#00cc99',
+    logo: jsLogo
   },
   {
-    name: "Serbian.cards",
-    desc: "Serbian Cards - How Much Serbian Do You Know?",
-    link: "https://serbian.cards",
-    themeColor: "#c6363c",
-    logo: serbianLogo,
+    name: 'Serbian.cards',
+    desc: 'Serbian Cards - How Much Serbian Do You Know?',
+    link: 'https://serbian.cards',
+    themeColor: '#c6363c',
+    logo: serbianLogo
   },
   {
-    name: "Quizr",
-    desc: "quizR - a community quiz game for useRs",
-    link: "https://quizr.io",
-    themeColor: "#51904c",
-    logo: quizrLogo,
+    name: 'Quizr',
+    desc: 'quizR - a community quiz game for useRs',
+    link: 'https://quizr.io',
+    themeColor: '#51904c',
+    logo: quizrLogo
   },
   {
-    name: "CDOquiz",
-    desc: "CDO Quiz - a Royally Challenging Data Adventure",
-    link: "https://cdoquiz.com/",
-    themeColor: "#a54499",
-    logo: cdoquizLogo,
+    name: 'CDOquiz',
+    desc: 'CDO Quiz - a Royally Challenging Data Adventure',
+    link: 'https://cdoquiz.com/',
+    themeColor: '#a54499',
+    logo: cdoquizLogo
   },
   {
-    name: "Insure.cards",
-    desc: "Insure Cards - Are You An Insurance Expert? Prove It",
-    link: "https://insure.cards/",
-    themeColor: "#5f8ba5",
-    logo: insureLogo,
-  },
-];
+    name: 'Insure.cards',
+    desc: 'Insure Cards - Are You An Insurance Expert? Prove It',
+    link: 'https://insure.cards/',
+    themeColor: '#5f8ba5',
+    logo: insureLogo
+  }
+]
 
 const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
   return (
@@ -199,10 +199,10 @@ const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
         </div>
       </Section>
     </Layout>
-  );
-};
+  )
+}
 
-export default About;
+export default About
 
 export const query = graphql`
   {
@@ -216,4 +216,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

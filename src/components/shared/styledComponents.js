@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const BottomSectionArrow = styled.div`
   width: 50px;
@@ -12,18 +12,18 @@ export const BottomSectionArrow = styled.div`
   // margin-left: auto;
   // margin-right: auto;
   z-index: 10;
-`;
+`
 
 export const SectionHeading = styled.h2`
-  text-align: ${(props) => (props.center === "no" ? "left" : "center")};
+  text-align: ${(props) => (props.center === 'no' ? 'left' : 'center')};
   letter-spacing: 1px;
   font-weight: 400;
-  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+  font-family: 'Montserrat', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
   text-transform: uppercase;
-`;
+`
 
 export const SectionDesc = styled.p`
-  text-align: ${(props) => (props.center === "no" ? "left" : "center")};
+  text-align: ${(props) => (props.center === 'no' ? 'left' : 'center')};
   opacity: 0.6;
-`;
+`

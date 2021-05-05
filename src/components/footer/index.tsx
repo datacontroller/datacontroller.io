@@ -1,20 +1,20 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react'
+import { Link } from 'gatsby'
 
 // import dcLogo from "../../images/dclogo.png";
 
-import { Container, Section } from "../shared";
+import { Container, Section } from '../shared'
 import {
   StyledHeading,
   StyledDesc,
   InputStyled,
   StyledButton,
-  StyledAnchor,
-} from "./style";
+  StyledAnchor
+} from './style'
 
 const anchorStyles = {
-  color: "#888",
-};
+  color: '#888'
+}
 
 const Footer = () => (
   <Section bottomArrow={false}>
@@ -23,8 +23,8 @@ const Footer = () => (
         <StyledHeading>Data Controller</StyledHeading>
         <StyledDesc>
           Data Controller is a product of Analytium Ltd, a software company
-          whose focal point is{" "}
-          <StyledAnchor href="https://sasapps.io">SAS App</StyledAnchor>{" "}
+          whose focal point is{' '}
+          <StyledAnchor href="https://sasapps.io">SAS App</StyledAnchor>{' '}
           development and education.
         </StyledDesc>
       </div>
@@ -59,13 +59,13 @@ const Footer = () => (
       <div className="col-md-3">
         <StyledHeading>Other Resources</StyledHeading>
         <StyledDesc>
-          Visit our educational and fun SAS® software quiz{" "}
+          Visit our educational and fun SAS® software quiz{' '}
           <StyledAnchor href="https://sasensei.com">Sasensei</StyledAnchor> and
           test your knowledge of SAS topics.
         </StyledDesc>
       </div>
     </div>
   </Section>
-);
+)
 
-export default Footer;
+export default Footer

@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
 
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope } from 'react-icons/fa'
 
 export const StyledLink = styled((props) => <Link {...props} />)`
   color: rgb(255, 255, 255);
@@ -19,7 +19,7 @@ export const StyledLink = styled((props) => <Link {...props} />)`
   line-height: 1.2em;
   text-align: center;
   max-width: 100%;
-  font-family: Montserrat, HelveticaNeue, "Helvetica Neue", Helvetica, Arial;
+  font-family: Montserrat, HelveticaNeue, 'Helvetica Neue', Helvetica, Arial;
 
   svg {
     opacity: 0;
@@ -34,10 +34,10 @@ export const StyledLink = styled((props) => <Link {...props} />)`
   }
 
   transition: all 0.3s ease;
-`;
+`
 
-const iconStyles = { marginTop: "-2px", marginLeft: "5px" };
-const textStyles = { opacity: "0.7", fontSize: "1rem", margin: "12px auto 0" };
+const iconStyles = { marginTop: '-2px', marginLeft: '5px' }
+const textStyles = { opacity: '0.7', fontSize: '1rem', margin: '12px auto 0' }
 
 export const ScheduleDemo = () => {
   return (
@@ -49,5 +49,5 @@ export const ScheduleDemo = () => {
         Contact us for a free demonstration of Data Controller.
       </p>
     </StyledLink>
-  );
-};
+  )
+}
