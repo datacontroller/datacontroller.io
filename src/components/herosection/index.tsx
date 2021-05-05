@@ -7,6 +7,8 @@ import { Hero, HeroHeading, HeroDesc, StyledButton } from './style'
 import { BottomSectionArrow } from '../shared/styledComponents'
 import { Container } from '../shared'
 
+import { pathPrefix } from '../../../gatsby-config.js'
+
 type DataProps = {
   location: Location
   title: string
@@ -18,7 +20,7 @@ const HeroSection: React.FC<PageProps<DataProps>> = ({
   title,
   desc
 }) => (
-  <Hero bg={location.pathname === '/'}>
+  <Hero bg={location.pathname === (pathPrefix || '/')}>
     <Container>
       <HeroHeading>{title}</HeroHeading>
       <HeroDesc>{desc}</HeroDesc>

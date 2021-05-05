@@ -1,10 +1,11 @@
+import React from 'react'
 import styled from 'styled-components'
 
-export const BottomSectionArrow = styled.div`
+const BottomArrow = styled.div`
   width: 50px;
   height: 50px;
   position: absolute;
-  bottom: -10px;
+  bottom: 10px;
   background: inherit;
   transform: translateX(-50%) rotate(45deg);
   left: 50%;
@@ -13,6 +14,20 @@ export const BottomSectionArrow = styled.div`
   // margin-right: auto;
   z-index: 10;
 `
+const BottomArrowWrapper = styled.div`
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 50px;
+  background-color: inherit;
+`
+
+export const BottomSectionArrow = () => (
+  <BottomArrowWrapper>
+    <BottomArrow />
+  </BottomArrowWrapper>
+)
 
 export const SectionHeading = styled.h2`
   text-align: ${(props) => (props.center === 'no' ? 'left' : 'center')};
