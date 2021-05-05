@@ -24,7 +24,7 @@ const HeroSection: React.FC<PageProps<DataProps>> = ({
     <Container>
       <HeroHeading>{title}</HeroHeading>
       <HeroDesc>{desc}</HeroDesc>
-      {location.pathname === '/' && (
+      {location.pathname === (pathPrefix || '/') && (
         <StyledButton>Try Data Controller</StyledButton>
       )}
     </Container>
