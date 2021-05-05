@@ -6,6 +6,8 @@ import dcLogo from '../../images/dclogo.png'
 import { Container } from '../shared'
 import { logoStyles, CustomNavBar, ulStyles, Li, StyledLink } from './style'
 
+import { pathPrefix } from '../../../gatsby-config.js'
+
 const naviLinks = [
   {
     name: 'Home',
@@ -50,7 +52,9 @@ type DataProps = {
 
 const Navibar: React.FC<PageProps<DataProps>> = ({ location }) => {
   naviLinks.forEach((link) => (link.active = 'no'))
-  const currentLink = naviLinks.find((link) => link.url === location?.pathname)
+  const currentLink = naviLinks.find(
+    (link) => pathPrefix + link.url === location?.pathname
+  )
   if (currentLink) currentLink.active = 'yes'
   return (
     <CustomNavBar className="navbar navbar-expand-lg">
