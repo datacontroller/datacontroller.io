@@ -48,7 +48,7 @@ const Anchor = styled.a`
 `
 
 export const StyledAnchor = ({ children, href }) => (
-  <Anchor href={href} target="_blank">
+  <Anchor href={href} target="_blank" rel="noopener">
     {children}
   </Anchor>
 )

@@ -4,6 +4,7 @@ import Gallery from '@browniebroke/gatsby-image-gallery'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 import { Section, ScheduleDemo } from '../components/shared'
 import {
@@ -69,6 +70,7 @@ const Home: React.FC<PageProps> = ({ data, location }) => {
       title="Flexible and Secure Data Modification"
       desc="Data Controller for SAS® enables business users to update IT owned source tables, secured by review / approve workflow and full audit trail."
     >
+      <Seo />
       <Section color="black" bgColor="white">
         <div className="row">
           <div className="col-md-3">

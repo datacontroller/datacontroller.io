@@ -2,6 +2,7 @@ import { PageProps, Link, graphql } from 'gatsby'
 import React from 'react'
 
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 import { Section } from '../components/shared'
 import {
@@ -118,8 +119,9 @@ const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
     <Layout
       location={location}
       title="Behind Data Controller"
-      desc="Data Controller is a product of Analytium Ltd."
+      desc="Data Controller is a product of Analytium Ltd"
     >
+      <Seo title="About" />
       <Section color="black" bgColor="white">
         <div className="row">
           <div className="offset-md-2 col-md-8">
@@ -137,7 +139,12 @@ const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
           {SasApps.map((app) => (
             <div className="col">
-              <Card className="card" href={app.link} target="_blank">
+              <Card
+                className="card"
+                href={app.link}
+                target="_blank"
+                rel="noopener"
+              >
                 <CardImg
                   className="card-img-top"
                   src={app.logo}
@@ -154,7 +161,7 @@ const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
         </div>
       </Section>
       <Section>
-        <FeaturedImg src={sasenseiFeatured} />
+        <FeaturedImg src={sasenseiFeatured} alt="Sasensei" title="Sasensei" />
         <FeaturedDesc>
           Sasensei is a free question-based learning system dedicated to various
           aspects of the
