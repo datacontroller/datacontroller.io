@@ -16,17 +16,17 @@ const naviLinks = [
   },
   {
     name: 'About',
-    url: '/about',
+    url: '/about/',
     active: 'no'
   },
   {
     name: 'Blog',
-    url: '/blog',
+    url: '/blog/',
     active: 'no'
   },
   {
     name: 'FAQ',
-    url: '/faq',
+    url: '/faq/',
     active: 'no'
   },
   {
@@ -36,12 +36,12 @@ const naviLinks = [
   },
   {
     name: 'Pricing',
-    url: '/pricing',
+    url: '/pricing/',
     active: 'no'
   },
   {
     name: 'Book Demo',
-    url: '/contact',
+    url: '/contact/',
     active: 'no'
   }
 ]

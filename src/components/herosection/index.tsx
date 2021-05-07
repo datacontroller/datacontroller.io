@@ -1,5 +1,5 @@
 import React from 'react'
-import { PageProps } from 'gatsby'
+import { PageProps, Link } from 'gatsby'
 
 import styled from 'styled-components'
 
@@ -25,7 +25,9 @@ const HeroSection: React.FC<PageProps<DataProps>> = ({
       <HeroHeading>{title}</HeroHeading>
       <HeroDesc>{desc}</HeroDesc>
       {location.pathname === pathPrefix + '/' && (
-        <StyledButton>Try Data Controller</StyledButton>
+        <Link to="/contact/">
+          <StyledButton>Try Data Controller</StyledButton>
+        </Link>
       )}
     </Container>
     <BottomSectionArrow />

@@ -4,13 +4,8 @@ import { Link } from 'gatsby'
 // import dcLogo from "../../images/dclogo.png";
 
 import { Container, Section } from '../shared'
-import {
-  StyledHeading,
-  StyledDesc,
-  InputStyled,
-  StyledButton,
-  StyledAnchor
-} from './style'
+import { StyledButton } from '../shared/styledComponents'
+import { StyledHeading, StyledDesc, InputStyled, StyledAnchor } from './style'
 
 const anchorStyles = {
   color: '#888'

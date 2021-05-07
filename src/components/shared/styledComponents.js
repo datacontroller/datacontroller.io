@@ -42,3 +42,22 @@ export const SectionDesc = styled.p`
   text-align: ${(props) => (props.center === 'no' ? 'left' : 'center')};
   opacity: 0.6;
 `
+const Button = styled.button`
+  padding: 0.75rem 1.5rem;
+  font-size: 0.75rem;
+  border-width: 2px;
+  width: 100%;
+  max-width: 250px;
+  &:hover {
+    opacity: 0.9;
+  }
+  &.btn-dark {
+    background-color: #2e4252;
+  }
+`
+
+export const StyledButton = ({ children, theme = 'light' }) => (
+  <Button type="submit" className={`btn btn-${theme}`}>
+    {children}
+  </Button>
+)
