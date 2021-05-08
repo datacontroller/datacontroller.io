@@ -23,6 +23,14 @@ module.exports = {
         icon: 'src/images/icon.png'
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `./src/markdown-pages`
+      },
+      __key: 'markdown-pages'
+    },
     'gatsby-transformer-remark',
     'gatsby-plugin-mdx',
     'gatsby-plugin-sharp',
@@ -42,6 +50,14 @@ module.exports = {
         path: './src/pages/'
       },
       __key: 'pages'
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `./src/markdown-pages`
+      },
+      __key: 'markdown-pages'
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
