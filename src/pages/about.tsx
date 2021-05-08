@@ -210,17 +210,3 @@ const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
 }
 
 export default About
-
-export const query = graphql`
-  {
-    site {
-      meta: siteMetadata {
-        title
-        description
-        social {
-          linkedin
-        }
-      }
-    }
-  }
-`

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const StyledHeading = styled.h5`
+export const StyledHeading = styled.h6`
   margin-bottom: 0.8rem;
   text-transform: uppercase;
   color: #888;

@@ -40,9 +40,16 @@ export const SectionHeading = styled.h2`
 
 export const SectionDesc = styled.p`
   text-align: ${(props) => (props.center === 'no' ? 'left' : 'center')};
-  opacity: 0.6;
+  opacity: ${(props) => props.opacity ?? 0.6};
+  a {
+    color: #8ec63f;
+    text-decoration: none;
+    &:hover {
+      color: #bbdc8b;
+    }
+  }
 `
-const Button = styled.button`
+const StyledSolidButton = styled.button`
   padding: 0.75rem 1.5rem;
   font-size: 0.75rem;
   border-width: 2px;
@@ -56,8 +63,21 @@ const Button = styled.button`
   }
 `
 
-export const StyledButton = ({ children, theme = 'light' }) => (
-  <Button type="submit" className={`btn btn-${theme}`}>
+export const SolidButton = ({ children, theme = 'light' }) => (
+  <StyledSolidButton type="submit" className={`btn btn-${theme}`}>
     {children}
-  </Button>
+  </StyledSolidButton>
+)
+
+const StyledOutlineButton = styled.button`
+  margin: 50px 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.75rem;
+  border-width: 2px;
+`
+
+export const OutlineButton = ({ children }) => (
+  <StyledOutlineButton type="button" className="btn btn-outline-light">
+    {children}
+  </StyledOutlineButton>
 )

@@ -14,8 +14,6 @@ export const Hero = styled.main`
 `
 
 export const HeroHeading = styled.h1`
-  letter-spacing: 1px;
-  font-weight: 400;
   font-family: 'Montserrat', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
   text-transform: uppercase;
@@ -24,16 +22,3 @@ export const HeroHeading = styled.h1`
 export const HeroDesc = styled.p`
   opacity: 0.8;
 `
-
-const Button = styled.button`
-  margin: 50px 0;
-  padding: 0.75rem 1.5rem;
-  font-size: 0.75rem;
-  border-width: 2px;
-`
-
-export const StyledButton = ({ children }) => (
-  <Button type="button" className="btn btn-outline-light">
-    {children}
-  </Button>
-)

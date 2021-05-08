@@ -8,7 +8,7 @@ import { Section } from '../components/shared'
 import {
   SectionHeading,
   SectionDesc,
-  StyledButton
+  SolidButton
 } from '../components/shared/styledComponents'
 
 import {
@@ -96,7 +96,7 @@ const Contact: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                 ></StyledTextArea>
               </div>
               <div className="mb-3">
-                <StyledButton theme="dark">Submit</StyledButton>
+                <SolidButton theme="dark">Submit</SolidButton>
               </div>
             </form>
           </div>

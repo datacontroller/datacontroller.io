@@ -76,7 +76,7 @@ const FeatureDetails = styled.div`
   padding-left: 20px;
   margin-bottom: 20px;
 `
-const FeatureTitle = styled.h6`
+const FeatureTitle = styled.h5`
   font-family: 'Montserrat', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
   text-transform: uppercase;

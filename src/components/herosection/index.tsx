@@ -3,8 +3,8 @@ import { PageProps, Link } from 'gatsby'
 
 import styled from 'styled-components'
 
-import { Hero, HeroHeading, HeroDesc, StyledButton } from './style'
-import { BottomSectionArrow } from '../shared/styledComponents'
+import { Hero, HeroHeading, HeroDesc } from './style'
+import { BottomSectionArrow, OutlineButton } from '../shared/styledComponents'
 import { Container } from '../shared'
 
 import { pathPrefix } from '../../../gatsby-config.js'
@@ -26,7 +26,7 @@ const HeroSection: React.FC<PageProps<DataProps>> = ({
       <HeroDesc>{desc}</HeroDesc>
       {location.pathname === pathPrefix + '/' && (
         <Link to="/contact/">
-          <StyledButton>Try Data Controller</StyledButton>
+          <OutlineButton>Try Data Controller</OutlineButton>
         </Link>
       )}
     </Container>

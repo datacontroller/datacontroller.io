@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 // import dcLogo from "../../images/dclogo.png";
 
 import { Container, Section } from '../shared'
-import { StyledButton } from '../shared/styledComponents'
+import { SolidButton } from '../shared/styledComponents'
 import { StyledHeading, StyledDesc, InputStyled, StyledAnchor } from './style'
 
 const anchorStyles = {
@@ -48,7 +48,7 @@ const Footer = () => (
               placeholder="Last Name"
             />
           </div>
-          <StyledButton>Subscribe</StyledButton>
+          <SolidButton>Subscribe</SolidButton>
         </form>
       </div>
       <div className="col-md-3">
