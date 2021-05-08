@@ -118,7 +118,7 @@ const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
   return (
     <Layout
       location={location}
-      title="Behind Data Controller"
+      heading="Behind Data Controller"
       desc="Data Controller is a product of Analytium Ltd"
     >
       <Seo title="About" />

@@ -67,7 +67,7 @@ const Home: React.FC<PageProps> = ({ data, location }) => {
   return (
     <Layout
       location={location}
-      title="Flexible and Secure Data Modification"
+      heading="Flexible and Secure Data Modification"
       desc="Data Controller for SAS® enables business users to update IT owned source tables, secured by review / approve workflow and full audit trail."
     >
       <Seo />

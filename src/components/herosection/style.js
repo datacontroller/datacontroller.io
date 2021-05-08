@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import background from '../../images/home_hero_bg.png'
 

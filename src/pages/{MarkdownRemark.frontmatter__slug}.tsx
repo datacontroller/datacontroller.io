@@ -23,12 +23,12 @@ const StyledMarkdown = styled.div`
   }
 `
 
-export default function Template({ data }) {
+export default function Template({ data, location }) {
   const { frontmatter, html } = data?.markdownRemark
   return (
     <Layout
       location={location}
-      title="DATA CONTROLLER PRICING"
+      heading="DATA CONTROLLER PRICING"
       desc="Our Pricing Goals are to be Transparent, Simple, and Fair"
     >
       <Seo title={frontmatter.title} />

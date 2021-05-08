@@ -35,7 +35,7 @@ const Contact: React.FC<PageProps<DataProps>> = ({ data, location }) => {
   return (
     <Layout
       location={location}
-      title="Book a Demo"
+      heading="Book a Demo"
       desc="Schedule a demonstration of the Data Controller to see our latest features and explore use cases"
     >
       <Seo title="Contact" />

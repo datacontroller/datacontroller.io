@@ -11,18 +11,18 @@ import { pathPrefix } from '../../../gatsby-config.js'
 
 type DataProps = {
   location: Location
-  title: string
+  heading: string
   desc: string
 }
 
 const HeroSection: React.FC<PageProps<DataProps>> = ({
   location,
-  title,
+  heading,
   desc
 }) => (
   <Hero bg={location.pathname === pathPrefix + '/'}>
     <Container>
-      <HeroHeading>{title}</HeroHeading>
+      <HeroHeading>{heading}</HeroHeading>
       <HeroDesc>{desc}</HeroDesc>
       {location.pathname === pathPrefix + '/' && (
         <Link to="/contact/">

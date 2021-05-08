@@ -12,13 +12,13 @@ type DataProps = {
 const Layout: React.FC<PageProps<DataProps>> = ({
   location,
   children,
-  title,
+  heading,
   desc
 }) => {
   return (
     <>
       <Navibar location={location} />
-      <HeroSection location={location} title={title} desc={desc} />
+      <HeroSection location={location} heading={heading} desc={desc} />
       {children}
       <Footer />
     </>

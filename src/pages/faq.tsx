@@ -27,7 +27,7 @@ const Faq: React.FC<PageProps<DataProps>> = ({ data, location }) => {
   return (
     <Layout
       location={location}
-      title="Data Controller – FAQ"
+      heading="Data Controller – FAQ"
       desc="Most common user questions and answers regarding the Data Controller"
     >
       <Seo title="FAQ" />
