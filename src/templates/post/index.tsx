@@ -53,13 +53,38 @@ const StyledContent = styled.div`
   h6 {
     color: #222222;
   }
+  * + h2,
+  * + h3 {
+    margin: 2rem auto 0.8rem;
+  }
   img {
     float: right;
+    max-width: 100%;
     &.aligncenter {
       float: none;
       max-width: 90%;
       display: block;
       margin: 10px auto;
+    }
+  }
+  .imgHolder {
+    padding: 5px;
+    margin-left: 5px;
+    float: right;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman';
+    img {
+      float: none;
+    }
+    > div {
+      display: flex;
+      span {
+        flex-grow: 1;
+        width: 0;
+      }
     }
   }
   pre {
@@ -81,7 +106,7 @@ const Post = ({ data }) => (
   <div>
     <GatsbyImage
       image={data.post.frontmatter.previewImg.childImageSharp.gatsbyImageData}
-      style={{ maxHeight: '500px' }}
+      style={{ width: '100%' }}
       imgStyle={{ objectFit: 'contain' }}
       alt={data.post.frontmatter.title}
     />
