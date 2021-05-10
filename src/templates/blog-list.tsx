@@ -29,7 +29,7 @@ const BlogListTemplate = ({ data, location, pageContext }) => {
           <div className="col-md-7">
             <div className="row">
               {posts.map((data, i) => (
-                <Post key={i} data={data} />
+                <Post key={i} post={data.post} />
               ))}
             </div>
           </div>

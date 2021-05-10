@@ -5,6 +5,8 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 
 import styled from 'styled-components'
 
+import getDescription from '../shared/getDescription'
+
 export const StyledLink = styled((props) => <Link {...props} />)`
   text-decoration: none;
   color: black;
@@ -32,31 +34,19 @@ const StyledDesc = styled.p`
   margin-bottom: 100px;
 `
 
-const extractContent = (s: string): string => {
-  if (typeof document !== `undefined`) {
-    const span = document.createElement('span')
-    span.innerHTML = s
-    return span.textContent || span.innerText
-  }
-  return s
-}
-const getDescription = (content: string): string => {
-  return extractContent(content).substr(0, 100) + '...'
-}
-
-const Post = ({ data }) => (
+const Post = ({ post }) => (
   <div className="col-md-6">
-    <StyledLink to={data.post.fields.slug}>
+    <StyledLink to={post.fields.slug}>
       <GatsbyImage
-        image={data.post.frontmatter.previewImg.childImageSharp.gatsbyImageData}
+        image={post.frontmatter.previewImg.childImageSharp.gatsbyImageData}
         style={{ minHeight: '150px', maxHeight: '200px' }}
         imgStyle={{ objectFit: 'contain' }}
-        alt={data.post.frontmatter.title}
+        alt={post.frontmatter.title}
       />
 
-      <StyledTitle>{data.post.frontmatter.title}</StyledTitle>
-      <StyledDate>{data.post.frontmatter.date}</StyledDate>
-      <StyledDesc>{getDescription(data.post.html)}</StyledDesc>
+      <StyledTitle>{post.frontmatter.title}</StyledTitle>
+      <StyledDate>{post.frontmatter.date}</StyledDate>
+      <StyledDesc>{getDescription(post.html)}</StyledDesc>
     </StyledLink>
   </div>
 )

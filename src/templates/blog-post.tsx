@@ -8,20 +8,22 @@ import { Section } from '../components/shared'
 import Post from './post'
 import { SideBar } from './sidebar'
 
+import getDescription from './shared/getDescription'
+
 const BlogPostTemplate = ({ data, location, pageContext }) => {
-  const post = data.markdownRemark
+  const post = data.post
   const { previous, next } = data
 
   return (
     <Layout location={location} heroSection={false}>
       <Seo
         title={post?.frontmatter?.title}
-        // description={post?.frontmatter?.description || post?.excerpt}
+        description={getDescription(post?.html)}
       />
       <Section color="black" bgColor="white" bottomArrow={false}>
         <div className="row">
           <div className="col-md-7">
-            <Post data={data} />
+            <Post post={post} />
           </div>
           <div className="col-md-5">
             <SideBar pageContext={pageContext} />

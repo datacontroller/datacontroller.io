@@ -112,8 +112,8 @@ const StyledContent = styled.div`
   }
 `
 
-const Post = ({ data }) => {
-  const tagsJSX = (data.post.frontmatter?.tags || []).map((tag, index) => (
+const Post = ({ post }) => {
+  const tagsJSX = (post.frontmatter?.tags || []).map((tag, index) => (
     <span key={index}>
       {index > 0 && ', '}
       <Link to={`/category/${kebabCase(tag)}/`} rel="category tag">
@@ -124,20 +124,19 @@ const Post = ({ data }) => {
   return (
     <div>
       <GatsbyImage
-        image={data.post.frontmatter.previewImg.childImageSharp.gatsbyImageData}
+        image={post.frontmatter.previewImg.childImageSharp.gatsbyImageData}
         style={{ width: '100%' }}
         imgStyle={{ objectFit: 'contain' }}
-        alt={data.post.frontmatter.title}
+        alt={post.frontmatter.title}
       />
 
-      <StyledTitle>{data.post.frontmatter.title}</StyledTitle>
+      <StyledTitle>{post.frontmatter.title}</StyledTitle>
       <StyledDate>
-        {data.post.frontmatter.date} / in {tagsJSX} / by{' '}
-        {data.post.frontmatter.author}
+        {post.frontmatter.date} / in {tagsJSX} / by {post.frontmatter.author}
       </StyledDate>
       <StyledContent
         dangerouslySetInnerHTML={{
-          __html: data.post.html
+          __html: post.html
         }}
       />
     </div>
