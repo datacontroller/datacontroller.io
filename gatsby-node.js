@@ -1,4 +1,5 @@
 const path = require(`path`)
+const _ = require('lodash')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -28,6 +29,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
           }
         }
+        tagsGroup: allMarkdownRemark(limit: 1000) {
+          group(field: frontmatter___tags) {
+            name: fieldValue
+            totalCount
+          }
+        }
       }
     `
   )
@@ -45,6 +52,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     slug: p.fields.slug,
     title: p.frontmatter.title
   }))
+  const tags = result.data.tagsGroup.group
+  const tagsFrequent = tags
+    .sort((a, b) => b.totalCount - a.totalCount)
+    .slice(0, 5)
 
   const archives = {}
   // side bar data for each page
@@ -69,6 +80,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: post.id,
           archives,
           recentPosts,
+          tags: tagsFrequent,
           previousPostId,
           nextPostId
         }
@@ -87,6 +99,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         page: 'index',
         archives,
         recentPosts,
+        tags: tagsFrequent,
         filter: { fileAbsolutePath: { regex: '/content/blog/' } },
         limit: postsPerPage,
         skip: i * postsPerPage,
@@ -107,6 +120,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           page: 'year',
           archives,
           recentPosts,
+          tags: tagsFrequent,
           filter: {
             frontmatter: { date: { gte: year, lt: year + 1 } },
             fileAbsolutePath: { regex: '/content/blog/' }
@@ -121,28 +135,29 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   }
 
-  // const tags = data.tagsGroup.group
-  // tags.forEach((tag) => {
-  //   const count = tag.totalCount
-  //   const numPagesOfTag = Math.ceil(count / postsPerPage)
-  //   Array.from({ length: numPagesOfTag }).forEach((__, i) => {
-  //     const tagPath = `/category/${_.kebabCase(tag.fieldValue)}/`
-  //     createPage({
-  //       path: i === 0 ? tagPath : `${tagPath}page/${i + 1}`,
-  //       component: PostListTemplate,
-  //       context: {
-  //         page: 'category',
-  //         archives,
-  //         filter: { frontmatter: { tags: { in: [tag.fieldValue] } } },
-  //         limit: postsPerPage,
-  //         skip: i * postsPerPage,
-  //         numPages: numPagesOfTag,
-  //         currentPage: i + 1,
-  //         tag: tag.fieldValue
-  //       }
-  //     })
-  //   })
-  // })
+  tags.forEach((tag) => {
+    const count = tag.totalCount
+    const numPagesOfTag = Math.ceil(count / postsPerPage)
+    Array.from({ length: numPagesOfTag }).forEach((__, i) => {
+      const tagPath = `/category/${_.kebabCase(tag.name)}/`
+      createPage({
+        path: i === 0 ? tagPath : `${tagPath}page/${i + 1}`,
+        component: blogListTemplate,
+        context: {
+          page: 'category',
+          archives,
+          recentPosts,
+          tags: tagsFrequent,
+          filter: { frontmatter: { tags: { in: [tag.name] } } },
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages: numPagesOfTag,
+          currentPage: i + 1,
+          tag: tag.name
+        }
+      })
+    })
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -194,6 +209,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date @dateformat
       author: String
       previewImg: File @fileByRelativePath
+      tags: [String!]!
     }
 
     type Fields {

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import kebabCase from 'lodash/kebabCase'
 import styled, { css } from 'styled-components'
 import { pathPrefix } from '../../gatsby-config.js'
 
@@ -34,9 +35,22 @@ const SideBarSection = styled.div`
 
 const Archives = ({ archives }) => (
   <>
-    {Object.keys(archives).map((year, index) => (
-      <ArchiveLink key={year} to={`/${year}/`}>
-        {year} ({archives[year]})
+    {Object.keys(archives)
+      .sort()
+      .reverse()
+      .map((year, index) => (
+        <ArchiveLink key={year} to={`/${year}/`}>
+          {year} ({archives[year]})
+        </ArchiveLink>
+      ))}
+  </>
+)
+
+const Categories = ({ tags }) => (
+  <>
+    {tags.map((tag, i) => (
+      <ArchiveLink key={i} to={`/category/${kebabCase(tag.name)}/`}>
+        {tag.name} ({tag.totalCount})
       </ArchiveLink>
     ))}
   </>
@@ -62,6 +76,9 @@ export const SideBar = ({ pageContext }) => (
       <StyledHeading>Archives</StyledHeading>
       <Archives archives={pageContext.archives} />
     </SideBarSection>
-    <StyledHeading>Categories</StyledHeading>
+    <SideBarSection>
+      <StyledHeading>Categories</StyledHeading>
+      <Categories tags={pageContext.tags} />
+    </SideBarSection>
   </>
 )

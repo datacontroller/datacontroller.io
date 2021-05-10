@@ -3,6 +3,13 @@ title: Data Controller - a Developer Perspective
 date: '2020-07-29 09:11:59'
 author: 'abowe'
 previewImg: './IMG-20190430-WA0049.jpg'
+tags:
+  - data controller
+  - data lineage
+  - metadata
+  - release management
+  - sas
+  - Use Cases
 ---
 
 <h1>What problem does Data Controller for SAS® solve?</h1>

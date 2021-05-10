@@ -3,6 +3,14 @@ title: Sarbanes-Oxley and Data Controller for SAS©
 date: '2020-08-12 01:00:21'
 author: 'abowe'
 previewImg: './Screenshot-from-2020-08-10-19-16-01.png'
+tags:
+  - data controller
+  - data lineage
+  - pcaob
+  - Regulatory
+  - sarbanes-oxley
+  - sas
+  - sox
 ---
 
 The Sarbanes-Oxley Act of 2002 has applied to all publicly-traded companies doing business in the US since 2006. The penalties can be severe - if Uncle Sam considers a corporate officer to have deliberately submitted an inaccurate certification, the corporate fine is $5 million with up to twenty years in prison for the individual(s). Accidental mis-certification (or non-submission) is just $1 million and 10 years in prison. There are many aspects to full Sarbanes-Oxley (SOX) compliance, the <a href="https://www.govinfo.gov/content/pkg/BILLS-107hr3763enr/pdf/BILLS-107hr3763enr.pdf">legislation</a> is over 60 pages long. As with other regulatory obligations, the goal is to regularly provide enough evidence to satisfy the auditor that the requirements have been met. As anyone running a compliance team knows, this is no small endeavour. The ability to automate the generation of such evidence, or make it available automatically to auditors, can result in significant cost savings. This article breaks down the areas where Data Controller can contribute to satisfying the requirements of the Sarbanes-Oxley Act. <h2>Sarbanes-Oxley Act Section 404 - MANAGEMENT ASSESSMENT OF INTERNAL CONTROLS.</h2> Data Controller facilitates internal controls through a 4 eyes review &amp; approve mechanism for data changes. This, combined with data validation and an integrated workflow feature, provides a mechanism to easily track and report on the number of internal controls (quality rules, signoffs, rejections), as well as the frequency they are applied, who is applying them, which data items the controls relate to, and who is performing them. Such metrics can be compared and contrasted with pre-existing and current quality measures to help determine control effectiveness. Variations in the number of submit / approve cycles between reporting teams, also provide objective and repeatable measurements to support the assessment of the effectiveness of internal controls.

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import kebabCase from 'lodash/kebabCase'
 
 import { GatsbyImage } from 'gatsby-plugin-image'
 
@@ -23,6 +24,15 @@ const StyledTitle = styled.h5`
 const StyledDate = styled.span`
   opacity: 0.5;
   font-size: 0.8rem;
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: black;
+      opacity: 1;
+    }
+  }
 `
 const StyledDesc = styled.p`
   margin-top: 10px;
@@ -102,25 +112,36 @@ const StyledContent = styled.div`
   }
 `
 
-const Post = ({ data }) => (
-  <div>
-    <GatsbyImage
-      image={data.post.frontmatter.previewImg.childImageSharp.gatsbyImageData}
-      style={{ width: '100%' }}
-      imgStyle={{ objectFit: 'contain' }}
-      alt={data.post.frontmatter.title}
-    />
+const Post = ({ data }) => {
+  const tagsJSX = (data.post.frontmatter?.tags || []).map((tag, index) => (
+    <span key={index}>
+      {index > 0 && ', '}
+      <Link to={`/category/${kebabCase(tag)}/`} rel="category tag">
+        {tag}
+      </Link>
+    </span>
+  ))
+  return (
+    <div>
+      <GatsbyImage
+        image={data.post.frontmatter.previewImg.childImageSharp.gatsbyImageData}
+        style={{ width: '100%' }}
+        imgStyle={{ objectFit: 'contain' }}
+        alt={data.post.frontmatter.title}
+      />
 
-    <StyledTitle>{data.post.frontmatter.title}</StyledTitle>
-    <StyledDate>
-      {data.post.frontmatter.date} / in TAGs / by {data.post.frontmatter.author}
-    </StyledDate>
-    <StyledContent
-      dangerouslySetInnerHTML={{
-        __html: data.post.html
-      }}
-    />
-  </div>
-)
+      <StyledTitle>{data.post.frontmatter.title}</StyledTitle>
+      <StyledDate>
+        {data.post.frontmatter.date} / in {tagsJSX} / by{' '}
+        {data.post.frontmatter.author}
+      </StyledDate>
+      <StyledContent
+        dangerouslySetInnerHTML={{
+          __html: data.post.html
+        }}
+      />
+    </div>
+  )
+}
 
 export default Post

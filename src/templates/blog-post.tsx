@@ -44,13 +44,14 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        date(formatString: "MMMM DD, YYYY")
+        author
         previewImg {
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED)
           }
         }
-        date(formatString: "MMMM DD, YYYY")
-        author
+        tags
       }
     }
   }
