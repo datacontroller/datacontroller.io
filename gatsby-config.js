@@ -12,7 +12,6 @@ module.exports = {
     }
   },
   pathPrefix: '/datacontroller.io',
-  assetPrefix: `https://macropeople.github.io/datacontroller.io`,
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',

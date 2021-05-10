@@ -35,7 +35,7 @@ const SideBarSection = styled.div`
 const Archives = ({ archives }) => (
   <>
     {Object.keys(archives).map((year, index) => (
-      <ArchiveLink key={year} to={`${pathPrefix}/${year}`}>
+      <ArchiveLink key={year} to={`/${year}/`}>
         {year} ({archives[year]})
       </ArchiveLink>
     ))}
