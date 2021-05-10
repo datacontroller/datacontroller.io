@@ -7,18 +7,22 @@ import Footer from './footer'
 
 type DataProps = {
   children?: React.ReactNode
+  heroSection: boolean
 }
 
 const Layout: React.FC<PageProps<DataProps>> = ({
   location,
   children,
+  heroSection = true,
   heading,
   desc
 }) => {
   return (
     <>
       <Navibar location={location} />
-      <HeroSection location={location} heading={heading} desc={desc} />
+      {heroSection && (
+        <HeroSection location={location} heading={heading} desc={desc} />
+      )}
       {children}
       <Footer />
     </>

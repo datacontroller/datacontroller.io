@@ -28,8 +28,8 @@ export default function Template({ data, location }) {
   return (
     <Layout
       location={location}
-      heading="DATA CONTROLLER PRICING"
-      desc="Our Pricing Goals are to be Transparent, Simple, and Fair"
+      heading={frontmatter.heading}
+      desc={frontmatter.desc}
     >
       <Seo title={frontmatter.title} />
       <Section color="black" bgColor="white" bottomArrow={false}>
@@ -46,6 +46,8 @@ export const pageQuery = graphql`
       frontmatter {
         slug
         title
+        heading
+        desc
       }
     }
   }

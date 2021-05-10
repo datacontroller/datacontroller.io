@@ -1,6 +1,8 @@
 ---
 slug: 'pricing'
 title: 'Pricing'
+heading: 'Data Controller Pricing'
+desc: 'Our Pricing Goals are to be Transparent, Simple, and Fair'
 ---
 
 ## Pricing Overview

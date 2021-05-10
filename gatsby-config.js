@@ -27,12 +27,33 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `./content/blog`,
+        name: `blog`
+      },
+      __key: 'blog'
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `markdown-pages`,
         path: `./src/markdown-pages`
       },
       __key: 'markdown-pages'
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-embed-video',
+            options: {
+              width: 750,
+              related: false //Optional: Will remove related videos from the end of an embedded YouTube video.
+            }
+          }
+        ]
+      }
+    },
     'gatsby-plugin-mdx',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
@@ -51,14 +72,6 @@ module.exports = {
         path: './src/pages/'
       },
       __key: 'pages'
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `./src/markdown-pages`
-      },
-      __key: 'markdown-pages'
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
