@@ -11,7 +11,13 @@ import {
   SectionHeading,
   SectionDesc
 } from '../components/shared/styledComponents'
-import { Art, Reason, CenteredText, Feature } from '../styledComponents'
+import {
+  Art,
+  Reason,
+  CenteredText,
+  Feature,
+  ThumbnailWrapper
+} from '../styledComponents'
 
 import leftArt from '../images/home_illustration2.png'
 import rightArt from '../images/home_illustration1.png'
@@ -55,15 +61,6 @@ const Home: React.FC<PageProps> = ({ data, location }) => {
     caption: node.childImageSharp.meta.originalName
   }))
 
-  // Override some of Lightbox options to localise labels in French
-  const lightboxOptions = {
-    imageLoadErrorMessage: 'Impossible de charger cette image',
-    nextLabel: 'Image suivante',
-    prevLabel: 'Image précédente',
-    zoomInLabel: 'Zoomer',
-    zoomOutLabel: 'Dézoomer',
-    closeLabel: 'Fermer'
-  }
   return (
     <Layout
       location={location}
@@ -234,7 +231,13 @@ const Home: React.FC<PageProps> = ({ data, location }) => {
       </Section>
       <Section color="black" bgColor="white">
         <SectionHeading>See How it Looks</SectionHeading>
-        <Gallery images={images} lightboxOptions={lightboxOptions} gutter={0} />
+        <Gallery
+          images={images}
+          gutter={0}
+          customWrapper={({ children, onClick }) => (
+            <ThumbnailWrapper onClick={onClick}>{children}</ThumbnailWrapper>
+          )}
+        />
       </Section>
       <ScheduleDemo />
     </Layout>

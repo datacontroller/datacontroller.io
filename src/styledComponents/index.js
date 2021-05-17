@@ -95,3 +95,22 @@ export const Feature = ({ title, desc, Icon, className }) => (
     </FeatureDetails>
   </div>
 )
+
+export const ThumbnailWrapper = styled.div`
+  -webkit-box-flex: 0;
+  flex: 0 0 33.3333%;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  display: flex;
+  max-width: 33.3333%;
+  @media (min-width: 576px) {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+`
