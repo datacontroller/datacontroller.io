@@ -1,7 +1,8 @@
 ---
 title: Data Quality and the NBB_2017_27 Circular
 date: '2018-10-13 21:52:06'
-author: 'abowe'
+author: 'Allan Bowe'
+authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './download.png'
 tags:
   - basel III

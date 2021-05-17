@@ -1,7 +1,8 @@
 ---
 title: Allianz Insurance and Data Controller for SAS®
 date: '2021-03-26 11:20:56'
-author: 'abowe'
+author: 'Allan Bowe'
+authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './Allianz_logo.svg_.png'
 tags:
   - Use Cases

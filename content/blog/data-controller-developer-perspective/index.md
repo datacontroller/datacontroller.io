@@ -1,7 +1,8 @@
 ---
 title: Data Controller - a Developer Perspective
 date: '2020-07-29 09:11:59'
-author: 'abowe'
+author: 'Allan Bowe'
+authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './IMG-20190430-WA0049.jpg'
 tags:
   - data controller

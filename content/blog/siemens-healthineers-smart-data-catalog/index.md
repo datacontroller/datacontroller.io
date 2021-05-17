@@ -1,7 +1,8 @@
 ---
 title: Siemens Healthineers Smart Data Catalog and Data Controller
 date: '2020-08-24 21:27:10'
-author: 'abowe'
+author: 'Allan Bowe'
+authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './siemenshealthineers.png'
 tags:
   - data catalog

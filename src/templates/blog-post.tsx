@@ -23,7 +23,7 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
       <Section color="black" bgColor="white" bottomArrow={false}>
         <div className="row">
           <div className="col-md-7">
-            <Post post={post} />
+            <Post post={post} location={location} />
           </div>
           <div className="col-md-5">
             <SideBar pageContext={pageContext} />
@@ -48,6 +48,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         author
+        authorLink
         previewImg {
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED)

@@ -1,7 +1,8 @@
 ---
 title: Data Controller - a BICC perspective
 date: '2020-08-10 20:43:45'
-author: 'abowe'
+author: 'Allan Bowe'
+authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './Group-1dt.png'
 tags:
   - data controller

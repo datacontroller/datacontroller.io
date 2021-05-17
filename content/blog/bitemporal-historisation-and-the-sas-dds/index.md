@@ -1,7 +1,8 @@
 ---
 title: Bitemporal Historisation and the SAS DDS
 date: '2020-08-06 18:32:46'
-author: 'abowe'
+author: 'Allan Bowe'
+authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './Screenshot-from-2020-08-06-22-40-55.png'
 tags:
   - banking

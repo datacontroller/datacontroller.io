@@ -83,7 +83,7 @@ const FeatureTitle = styled.h5`
 `
 const FeatureDesc = styled.p`
   opacity: 0.5;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 `
 
 export const Feature = ({ title, desc, Icon, className }) => (

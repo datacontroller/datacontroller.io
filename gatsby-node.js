@@ -48,14 +48,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const posts = result.data.allMarkdownRemark.nodes
-  const recentPosts = posts.slice(0, 5).map((p) => ({
+  const recentPosts = posts.slice(0, 10).map((p) => ({
     slug: p.fields.slug,
     title: p.frontmatter.title
   }))
   const tags = result.data.tagsGroup.group
   const tagsFrequent = tags
     .sort((a, b) => b.totalCount - a.totalCount)
-    .slice(0, 5)
+    .slice(0, 10)
 
   const archives = {}
   // side bar data for each page
@@ -208,6 +208,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       date: Date @dateformat
       author: String
+      authorLink: String
       previewImg: File @fileByRelativePath
       tags: [String!]!
     }

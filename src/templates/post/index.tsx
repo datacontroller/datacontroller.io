@@ -6,6 +6,8 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 
 import styled from 'styled-components'
 
+import Sharer from '../../components/sharer'
+
 export const StyledLink = styled((props) => <Link {...props} />)`
   text-decoration: none;
   color: black;
@@ -112,7 +114,7 @@ const StyledContent = styled.div`
   }
 `
 
-const Post = ({ post }) => {
+const Post = ({ post, location }) => {
   const tagsJSX = (post.frontmatter?.tags || []).map((tag, index) => (
     <span key={index}>
       {index > 0 && ', '}
@@ -121,6 +123,15 @@ const Post = ({ post }) => {
       </Link>
     </span>
   ))
+  const authorJSX = post.frontmatter.authorLink ? (
+    <span>
+      <a href={post.frontmatter.authorLink} target="_blank" rel="noopener">
+        {post.frontmatter.author}
+      </a>
+    </span>
+  ) : (
+    <span>{post.frontmatter.author}</span>
+  )
   return (
     <div>
       <GatsbyImage
@@ -132,13 +143,14 @@ const Post = ({ post }) => {
 
       <StyledTitle>{post.frontmatter.title}</StyledTitle>
       <StyledDate>
-        {post.frontmatter.date} / in {tagsJSX} / by {post.frontmatter.author}
+        {post.frontmatter.date} / in {tagsJSX} / by {authorJSX}
       </StyledDate>
       <StyledContent
         dangerouslySetInnerHTML={{
           __html: post.html
         }}
       />
+      <Sharer title={post.frontmatter.title} url={location.href} />
     </div>
   )
 }

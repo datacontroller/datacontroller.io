@@ -177,40 +177,43 @@ const Home: React.FC<PageProps> = ({ data, location }) => {
             title="Real-time"
             desc="Intra day, concurrent updates are managed using a lock table and queuing mechanism. Updates are aborted if another user has changed the table since the approval diff was generated."
             Icon={AiOutlineClockCircle}
+            className="col-sm-6 col-md-6 col-xl-4"
           />
           <Feature
             title="Secure"
             desc="The existing SASLogon framework is used to manage Authentication &amp; Authorisation. End users do not require direct access to the target tables."
             Icon={AiFillLock}
+            className="col-sm-6 col-md-6 col-xl-4"
           />
           <Feature
             title="Approval Mechanism"
-            desc="ALL data changes require 1 or more approvals before updating the table. The approver sees only the changes that will be applied to the target (new/deleted/changed rows)."
+            desc="All data changes require 1 or more approvals before updating the table. The approver sees only the changes that will be applied to the target (new/deleted/changed rows)."
             Icon={TiTick}
+            className="col-sm-6 col-md-6 col-xl-4"
           />
           <Feature
             title="Loading Tables of Different Types"
             desc="Using SAS®&nbsp;libname engines, you can securely update tables in your preferred database. Data Controller supports Retained keys, SCD2 loads, Bitemporal, and composite primary keys."
             Icon={HiOutlineRefresh}
-            className="col-md-3"
+            className="col-sm-6 col-md-6 col-xl-3"
           />
           <Feature
             title="Full Audit History"
             desc="You are able to track every change of data, including who made the change, when, why, and what the actual change was. You are able to access this feature on the History page."
             Icon={MdHistory}
-            className="col-md-3"
+            className="col-sm-6 col-md-4 col-xl-3"
           />
           <Feature
             title="Zero Code"
             desc="Adding new tables is a matter of configuration, which can perform entirely within the tool itself. No need to define column types, lengths etc – these are dynamically figured out at runtime."
             Icon={BsCode}
-            className="col-md-3"
+            className="col-sm-6 col-md-4 col-xl-3"
           />
           <Feature
             title="Workflow"
             desc="You are able to configure “Hook scripts” to execute before and after each action. So you could run a data quality check after uploading a mapping table or run a model after changing a parameter."
             Icon={BiNetworkChart}
-            className="col-md-3"
+            className="col-sm-6 col-md-4 col-xl-3"
           />
         </div>
       </Section>

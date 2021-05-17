@@ -1,7 +1,8 @@
 ---
 title: Version 3.11 - Release Notes (Redshift, Locale, Proc Transpose)
 date: '2021-02-14 13:58:57'
-author: 'abowe'
+author: 'Allan Bowe'
+authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './1_5i1_LPEiMqqEuAmYhcmcIw.png'
 tags:
   - licence

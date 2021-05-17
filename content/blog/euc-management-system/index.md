@@ -1,7 +1,8 @@
 ---
 title: EUC Management Systems need these 12 Attributes
 date: '2018-10-30 09:13:25'
-author: 'abowe'
+author: 'Allan Bowe'
+authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './DC-UML-Activity-Diagram-2.png'
 tags:
   - Data Management
