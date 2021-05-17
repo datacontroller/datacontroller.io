@@ -46,6 +46,9 @@ import {
 
 import styled from 'styled-components'
 
+const StyledSharer = styled.div`
+  margin-bottom: 30px;
+`
 const SocialButtonContainer = styled.div`
   display: inline-block;
   &:hover {
@@ -56,7 +59,7 @@ const SocialButtonContainer = styled.div`
 const Sharer = ({ title = '', url }) => {
   title = `${title} | Data Controller`
   return (
-    <div className="Demo__container">
+    <StyledSharer>
       <SocialButtonContainer>
         <FacebookShareButton url={url} quote={title}>
           <FacebookIcon size={56} />
@@ -185,7 +188,7 @@ const Sharer = ({ title = '', url }) => {
           <HatenaIcon size={56} />
         </HatenaShareButton>
       </SocialButtonContainer>
-    </div>
+    </StyledSharer>
   )
 }
 

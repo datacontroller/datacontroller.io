@@ -72,6 +72,7 @@ const StyledContent = styled.div`
   img {
     float: right;
     max-width: 100%;
+    margin: 10px;
     &.aligncenter {
       float: none;
       max-width: 90%;
