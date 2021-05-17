@@ -50,25 +50,34 @@ const Contact: React.FC<PageProps<DataProps>> = ({ data, location }) => {
             </SectionDesc>
             <StyledHeading>Contact Us</StyledHeading>
 
-            <form>
+            <form
+              className="kwes-form"
+              method="POST"
+              action="https://kwes.io/api/foreign/forms/mxKuyK4lxZWnG2WNH3ga"
+            >
               <div className="mb-3">
-                <StyledLabel htmlFor="contactName" className="form-label">
+                <StyledLabel htmlFor="name" className="form-label">
                   Name
                 </StyledLabel>
                 <StyledInput
                   type="text"
                   className="form-control"
-                  id="contactName"
+                  id="name"
+                  name="name"
+                  rules="required|max:50"
+                  custom="required|max:50"
                 />
               </div>
               <div className="mb-3">
-                <StyledLabel htmlFor="contactEmail" className="form-label">
+                <StyledLabel htmlFor="email" className="form-label">
                   Email address
                 </StyledLabel>
                 <StyledInput
                   type="email"
                   className="form-control"
-                  id="contactEmail"
+                  id="email"
+                  name="email"
+                  rules="required|email"
                   aria-describedby="emailHelp"
                 />
                 <div id="emailHelp" className="form-text">
@@ -76,23 +85,27 @@ const Contact: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                 </div>
               </div>
               <div className="mb-3">
-                <StyledLabel htmlFor="contactSubject" className="form-label">
+                <StyledLabel htmlFor="subject" className="form-label">
                   Subject
                 </StyledLabel>
                 <StyledInput
                   type="text"
                   className="form-control"
-                  id="contactSubject"
+                  id="subject"
+                  name="subject"
+                  rules="required|max:50"
                 />
               </div>
               <div className="mb-3">
-                <StyledLabel htmlFor="contactMesage" className="form-label">
+                <StyledLabel htmlFor="mesage" className="form-label">
                   Message
                 </StyledLabel>
                 <StyledTextArea
                   className="form-control"
-                  id="contactMesage"
+                  id="mesage"
+                  name="message"
                   rows="5"
+                  rules="required|max:200"
                 ></StyledTextArea>
               </div>
               <div className="mb-3">

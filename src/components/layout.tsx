@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { PageProps } from 'gatsby'
 
 import Navibar from './navibar'
@@ -17,6 +17,15 @@ const Layout: React.FC<PageProps<DataProps>> = ({
   heading,
   desc
 }) => {
+  useEffect(() => {
+    if (document.querySelector('script[data-name="kwes-script"]')) return
+
+    const kwesScript = document.createElement('script')
+    kwesScript.setAttribute('rel', 'noopener')
+    kwesScript.setAttribute('src', 'https://kwes.io/v2/kwes-script.js')
+    kwesScript.setAttribute('data-name', 'kwes-script')
+    document.head.appendChild(kwesScript)
+  })
   return (
     <>
       <Navibar location={location} />

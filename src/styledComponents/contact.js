@@ -1,3 +1,4 @@
+import React from 'react'
 import styled, { css } from 'styled-components'
 
 export const StyledHeading = styled.h3`
@@ -19,12 +20,13 @@ const contactFormStyles = css`
   }
 `
 
-export const StyledInput = styled.input`
-  ${contactFormStyles}
-`
-export const StyledTextArea = styled.textarea`
-  ${contactFormStyles}
-`
+export const StyledInput = (props) => (
+  <input styles={contactFormStyles} {...props} />
+)
+
+export const StyledTextArea = (props) => (
+  <textarea styles={contactFormStyles} {...props} />
+)
 
 export const ContactBackground = styled.img.attrs((props) => ({
   alt: props.info || '',
