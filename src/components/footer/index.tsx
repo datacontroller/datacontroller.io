@@ -25,25 +25,34 @@ const Footer = () => (
       </div>
       <div className="col-md-3">
         <StyledHeading>Newsletter</StyledHeading>
-        <form>
+        <form
+          className="kwes-form"
+          method="POST"
+          action="https://kwes.io/api/foreign/forms/mxKuyK4lxZWnG2WNH3ga"
+        >
           <div className="mb-3">
             <InputStyled
               type="email"
+              name="email"
               className="form-control"
               aria-describedby="emailHelp"
               placeholder="Email Address*"
+              required
             />
           </div>
           <div className="mb-3">
             <InputStyled
               type="text"
+              name="name"
               className="form-control"
               placeholder="First Name"
+              required
             />
           </div>
           <div className="mb-3">
             <InputStyled
               type="text"
+              name="lastName"
               className="form-control"
               placeholder="Last Name"
             />

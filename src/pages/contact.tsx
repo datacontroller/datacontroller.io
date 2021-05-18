@@ -65,7 +65,6 @@ const Contact: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                   id="name"
                   name="name"
                   rules="required|max:50"
-                  custom="required|max:50"
                 />
               </div>
               <div className="mb-3">

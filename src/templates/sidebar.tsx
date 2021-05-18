@@ -82,6 +82,9 @@ export const SideBar = ({ pageContext, location }) => {
   const params = new URLSearchParams(location.search.substring(1))
   const queryUrl = params?.get('s') || ''
   const [query, setQuery] = useState(queryUrl)
+  useEffect(() => {
+    setQuery(queryUrl)
+  }, [queryUrl])
 
   const handleSubmit = (event) => {
     event.preventDefault()
