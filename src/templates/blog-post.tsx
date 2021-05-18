@@ -26,7 +26,7 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
             <Post post={post} location={location} />
           </div>
           <div className="col-md-5">
-            <SideBar pageContext={pageContext} />
+            <SideBar pageContext={pageContext} location={location} />
           </div>
         </div>
       </Section>

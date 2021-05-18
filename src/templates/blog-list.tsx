@@ -1,5 +1,6 @@
 import { Link, graphql } from 'gatsby'
 import React from 'react'
+import kebabCase from 'lodash/kebabCase'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
@@ -17,6 +18,39 @@ import { SideBar } from './sidebar'
 
 const BlogListTemplate = ({ data, location, pageContext }) => {
   const posts = data.remark.posts
+
+  const iniPath =
+    pageContext.page == 'index'
+      ? `/blog/`
+      : pageContext.page == 'year'
+      ? `/${pageContext.year}/`
+      : pageContext.page == 'category'
+      ? `/category/${kebabCase(pageContext.tag)}/`
+      : null
+
+  const pageInfo = `Page ${pageContext.currentPage} of ${pageContext.numPages}`
+  Array.from({ length: 5 }, (v, k) => k + 1)
+  const paginationJSX = Array.from(
+    { length: pageContext.numPages },
+    (_, i) => i + 1
+  ).map((pageIndex) => {
+    const link = pageIndex === 1 ? iniPath : `${iniPath}page/${pageIndex}`
+    return (
+      <Link
+        to={link}
+        className={`btn btn-outline-dark btn-sm ${
+          pageIndex === pageContext.currentPage ? 'disabled' : ''
+        }`}
+        style={{
+          borderRadius: '50%',
+          padding: '.375rem .75rem',
+          margin: '0.25rem'
+        }}
+      >
+        {pageIndex}
+      </Link>
+    )
+  })
   return (
     <Layout
       location={location}
@@ -32,9 +66,11 @@ const BlogListTemplate = ({ data, location, pageContext }) => {
                 <Post key={i} post={data.post} />
               ))}
             </div>
+            <span className="float-start">{paginationJSX}</span>
+            <span className="float-end">{pageInfo}</span>
           </div>
           <div className="col-md-5">
-            <SideBar pageContext={pageContext} />
+            <SideBar pageContext={pageContext} location={location} />
           </div>
         </div>
       </Section>

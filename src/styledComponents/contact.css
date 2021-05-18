@@ -1,0 +1,10 @@
+.contactFormStyles {
+  border-color: #e1e1e1;
+  background-color: #f8f8f8;
+  color: #919191;
+}
+
+.contactFormStyles:focus {
+  background-color: #f8f8f8;
+  box-shadow: none;
+}

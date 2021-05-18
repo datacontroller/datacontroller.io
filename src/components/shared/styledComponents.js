@@ -63,8 +63,17 @@ const StyledSolidButton = styled.button`
   }
 `
 
-export const SolidButton = ({ children, theme = 'light' }) => (
-  <StyledSolidButton type="submit" className={`btn btn-${theme}`}>
+export const SolidButton = ({
+  children,
+  theme = 'light',
+  type = 'submit',
+  onClick = undefined
+}) => (
+  <StyledSolidButton
+    type={type}
+    className={`btn btn-${theme}`}
+    onClick={onClick}
+  >
     {children}
   </StyledSolidButton>
 )

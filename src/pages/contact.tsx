@@ -13,13 +13,13 @@ import {
 
 import {
   StyledHeading,
-  StyledInput,
-  StyledTextArea,
   StyledLabel,
   ContactBackground
 } from '../styledComponents/contact'
 
 import contactBg from '../images/contact_bg.jpg'
+
+import '../styledComponents/contact.css'
 
 type DataProps = {
   site: {
@@ -59,9 +59,9 @@ const Contact: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                 <StyledLabel htmlFor="name" className="form-label">
                   Name
                 </StyledLabel>
-                <StyledInput
+                <input
                   type="text"
-                  className="form-control"
+                  className="form-control contactFormStyles"
                   id="name"
                   name="name"
                   rules="required|max:50"
@@ -72,9 +72,9 @@ const Contact: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                 <StyledLabel htmlFor="email" className="form-label">
                   Email address
                 </StyledLabel>
-                <StyledInput
+                <input
                   type="email"
-                  className="form-control"
+                  className="form-control contactFormStyles"
                   id="email"
                   name="email"
                   rules="required|email"
@@ -88,9 +88,9 @@ const Contact: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                 <StyledLabel htmlFor="subject" className="form-label">
                   Subject
                 </StyledLabel>
-                <StyledInput
+                <input
                   type="text"
-                  className="form-control"
+                  className="form-control contactFormStyles"
                   id="subject"
                   name="subject"
                   rules="required|max:50"
@@ -100,13 +100,13 @@ const Contact: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                 <StyledLabel htmlFor="mesage" className="form-label">
                   Message
                 </StyledLabel>
-                <StyledTextArea
-                  className="form-control"
+                <textarea
+                  className="form-control contactFormStyles"
                   id="mesage"
                   name="message"
                   rows="5"
                   rules="required|max:200"
-                ></StyledTextArea>
+                ></textarea>
               </div>
               <div className="mb-3">
                 <SolidButton theme="dark">Submit</SolidButton>
