@@ -3,7 +3,7 @@ title: v3.12 Release – Four New Data Management Features
 date: '2021-05-13 09:00:00'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
-previewImg: 'https://docs.datacontroller.io/img/cell_validation1.png'
+previewImg: './cell_validation1.png'
 tags:
   - Data Quality
   - End User Computing
