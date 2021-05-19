@@ -1,13 +1,13 @@
 ---
-title: Version 3.11 - Release Notes (Redshift, Locale, Proc Transpose)
-date: '2021-02-14 13:58:57'
+title: v3.12 Release – Four New Data Management Features
+date: '2021-05-13 09:00:00'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
-previewImg: './1_5i1_LPEiMqqEuAmYhcmcIw.png'
+previewImg: 'https://docs.datacontroller.io/img/cell_validation1.png'
 tags:
-  - licence
-  - redshift
-  - releases
+  - Data Quality
+  - End User Computing
+  - Excel
 ---
 
 Thanks to a customer investment, we have four fantastic new features!  These are:
