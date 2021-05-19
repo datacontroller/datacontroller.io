@@ -12,7 +12,6 @@ module.exports = {
     }
   },
   pathPrefix: '',
-  pathPrefixDummy: '/datacontroller.io',
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
