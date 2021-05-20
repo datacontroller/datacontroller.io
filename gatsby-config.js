@@ -20,7 +20,19 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png'
+        name: `Data Controller | Flexible and Secure SAS® Data Modification`,
+        short_name: `Data Controller`,
+        description: `Data Controller for SAS® is dedicated to helping users, admins and developers manage their data. A zero code approach with Data Lineage, Catalog, Dictionary, Validation, Workflow, Alerts and more.`,
+        homepage_url: 'https://datacontroller.io/',
+        start_url: '/',
+        background_color: '#fff',
+        theme_color: '#314351',
+        display: 'standalone',
+        icon: 'src/images/favicon.png',
+        icon_options: {
+          purpose: `maskable`
+        },
+        cache_busting_mode: 'none'
       }
     },
     {
