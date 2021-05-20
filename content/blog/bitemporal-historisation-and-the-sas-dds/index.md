@@ -1,5 +1,6 @@
 ---
 title: Bitemporal Historisation and the SAS DDS
+description: Bitemporal historisation is supported in SAS DDS so long as appropriate transforms are applied, and consistent extraction logic is used.
 date: '2020-08-06 18:32:46'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/

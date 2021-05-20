@@ -137,7 +137,7 @@ const Post = ({ post, location }) => {
     <div>
       <GatsbyImage
         image={post.frontmatter.previewImg.childImageSharp.gatsbyImageData}
-        style={{ width: '100%' }}
+        style={{ width: '100%', marginBottom: '1rem' }}
         imgStyle={{ objectFit: 'contain' }}
         alt={post.frontmatter.title}
       />

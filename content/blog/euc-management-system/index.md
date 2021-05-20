@@ -1,5 +1,6 @@
 ---
 title: EUC Management Systems need these 12 Attributes
+description: An EUC management system should automatically identify, clean, secure, backup, and integrate EUC data with full auditability, ownership, and approval.
 date: '2018-10-30 09:13:25'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/

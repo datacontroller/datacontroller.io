@@ -1,5 +1,6 @@
 ---
 title: Data Controller - a Developer Perspective
+description: Rafal Gagor - veteran SAS Developer - shares his thoughts and experience of using Data Controller for SAS® on a client project.
 date: '2020-07-29 09:11:59'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/

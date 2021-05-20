@@ -1,5 +1,6 @@
 ---
 title: Data Quality and the NBB_2017_27 Circular
+description: The 3 Principles of NBB_2017_27 require significant documentation. Data Controller reduces costs of compliance and improves Timeliness of data.
 date: '2018-10-13 21:52:06'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/

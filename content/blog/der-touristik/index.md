@@ -1,5 +1,6 @@
 ---
 title: Data Controller - a BICC perspective
+description: Data Controller for SAS was recently implemented within DER Touristik, Germany. We caught up with Herbert Grossmann of the BICC to learn more about it.
 date: '2020-08-10 20:43:45'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/

@@ -1,5 +1,6 @@
 ---
 title: Sarbanes-Oxley and Data Controller for SAS©
+description: Learn how Data Controller for SAS reduces the risks and compliance costs of Sarbanes-Oxley and associated PCAOB Accounting Standard 5.
 date: '2020-08-12 01:00:21'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
