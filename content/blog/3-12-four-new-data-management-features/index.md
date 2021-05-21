@@ -47,7 +47,7 @@ Now, when the dynamic where clause box is checked (which is the default), the va
 
 It is now possible to configure certain columns to be extracted as formulae, rather than raw values. The target column must be character, and it should be wide enough to support the longest formula in the source data. If the order of values is important, you should include a row number in your primary key.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Reg803vI2Ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Reg803vI2Ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Full configuration information in the [docs](https://docs.datacontroller.io/excel).
