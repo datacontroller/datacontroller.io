@@ -2,6 +2,10 @@ const path = require(`path`)
 const _ = require('lodash')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+const recentPosts = []
+const archives = {}
+const tagsFrequent = []
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
@@ -49,16 +53,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const posts = result.data.allMarkdownRemark.nodes
-  const recentPosts = posts.slice(0, 10).map((p) => ({
-    slug: p.fields.slug,
-    title: p.frontmatter.title
-  }))
-  const tags = result.data.tagsGroup.group
-  const tagsFrequent = tags
-    .sort((a, b) => b.totalCount - a.totalCount)
-    .slice(0, 10)
+  recentPosts.push(
+    ...posts.slice(0, 10).map((p) => ({
+      slug: p.fields.slug,
+      title: p.frontmatter.title
+    }))
+  )
 
-  const archives = {}
+  const tags = result.data.tagsGroup.group
+  tagsFrequent.push(
+    ...tags.sort((a, b) => b.totalCount - a.totalCount).slice(0, 10)
+  )
+
   // side bar data for each page
   posts.forEach((d) => {
     if (archives[d.frontmatter.date] == null) archives[d.frontmatter.date] = 0
@@ -170,6 +176,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       tags: tagsFrequent
     }
   })
+}
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions
+
+  if (page.path == '/404/') {
+    deletePage(page)
+    createPage({
+      ...page,
+      context: {
+        ...page.context,
+        archives,
+        recentPosts,
+        tags: tagsFrequent
+      }
+    })
+  }
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

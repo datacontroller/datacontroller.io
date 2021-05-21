@@ -7,9 +7,16 @@ import { pathPrefix } from '../../gatsby-config.js'
 import { StyledHeading } from '../styledComponents/blog'
 import { SolidButton } from '../components/shared/styledComponents'
 
-const linkStyles = css`
+const styles = css`
   color: #314351;
   opacity: 0.8;
+  font: 13px/1.65em 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  font-size: 0.9rem;
+`
+
+const linkStyles = css`
+  ${styles}
   text-decoration: none;
   display: block;
   &:hover {
@@ -17,7 +24,6 @@ const linkStyles = css`
     opacity: 1;
     text-decoration: underline;
   }
-  font-size: 0.9rem;
 `
 const ArchiveLink = styled((props) => <Link {...props} />)`
   ${linkStyles}
@@ -43,6 +49,10 @@ const StyledInput = styled.input`
     background-color: #f8f8f8;
     box-shadow: none;
   }
+`
+
+const StyledPara = styled.p`
+  ${styles}
 `
 
 const Archives = ({ archives }) => (
@@ -78,7 +88,7 @@ const RecentPosts = ({ posts }) => (
   </>
 )
 
-export const SideBar = ({ pageContext, location }) => {
+export const SideBar = ({ pageContext, location, notFoundPage = false }) => {
   const params = new URLSearchParams(location.search.substring(1))
   const queryUrl = params?.get('s') || ''
   const [query, setQuery] = useState(queryUrl)
@@ -100,6 +110,17 @@ export const SideBar = ({ pageContext, location }) => {
   return (
     <>
       <SideBarSection>
+        {notFoundPage && (
+          <>
+            <StyledPara>
+              <b>Nothing Found</b>
+            </StyledPara>
+            <StyledPara>
+              Sorry, the post you are looking for is not available. Maybe you
+              want to perform a search?
+            </StyledPara>
+          </>
+        )}
         <div className="input-group mb-3">
           <StyledInput
             type="text"
@@ -116,17 +137,41 @@ export const SideBar = ({ pageContext, location }) => {
           </SolidButton>
           <form onSubmit={handleSubmit}></form>
         </div>
-        <StyledHeading>Recent Posts</StyledHeading>
+        {notFoundPage && (
+          <>
+            <StyledPara>
+              For best search results, mind the following suggestions:
+            </StyledPara>
+            <StyledPara>
+              <ul>
+                <li>Always double check your spelling.</li>
+                <li>
+                  Try similar keywords, for example: tablet instead of laptop.
+                </li>
+                <li>Try using more than one keyword.</li>
+              </ul>
+            </StyledPara>
+          </>
+        )}
+        <StyledHeading>
+          {notFoundPage
+            ? 'Feel like browsing some posts instead?'
+            : 'Recent Posts'}
+        </StyledHeading>
         <RecentPosts posts={pageContext.recentPosts} />
       </SideBarSection>
-      <SideBarSection>
-        <StyledHeading>Archives</StyledHeading>
-        <Archives archives={pageContext.archives} />
-      </SideBarSection>
-      <SideBarSection>
-        <StyledHeading>Categories</StyledHeading>
-        <Categories tags={pageContext.tags} />
-      </SideBarSection>
+      {!notFoundPage && (
+        <>
+          <SideBarSection>
+            <StyledHeading>Archives</StyledHeading>
+            <Archives archives={pageContext.archives} />
+          </SideBarSection>
+          <SideBarSection>
+            <StyledHeading>Categories</StyledHeading>
+            <Categories tags={pageContext.tags} />
+          </SideBarSection>
+        </>
+      )}
     </>
   )
 }

@@ -1,5 +1,6 @@
 ---
 title: Allianz Insurance and Data Controller for SAS®
+description: Data Controller for SAS is used to provide the actuarial team at Allianz with an easy to use bitemporal reporting capability
 date: '2021-03-26 11:20:56'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/

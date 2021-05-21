@@ -8,17 +8,18 @@ import { Section } from '../components/shared'
 import Post from './post'
 import { SideBar } from './sidebar'
 
-import getDescription from './shared/getDescription'
-
 const BlogPostTemplate = ({ data, location, pageContext }) => {
-  const post = data.post
-  const { previous, next } = data
+  const { post } = data
+  const { previewImg } = post.frontmatter
 
   return (
     <Layout location={location} heroSection={false}>
       <Seo
         title={post?.frontmatter?.title}
-        description={getDescription(post?.html)}
+        description={post?.frontmatter?.description}
+        previewImg={
+          previewImg?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+        }
       />
       <Section color="black" bgColor="white" bottomArrow={false}>
         <div className="row">
@@ -46,6 +47,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        description
         date(formatString: "MMMM DD, YYYY")
         author
         authorLink

@@ -1,5 +1,6 @@
 ---
 title: Siemens Healthineers Smart Data Catalog and Data Controller
+description: Data Controller was implemented at Siemens Healthineers to facilitate their SAS-Powered Smart Data Catalog and enable Data Lineage reporting.
 date: '2020-08-24 21:27:10'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/

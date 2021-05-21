@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const Seo = ({ description, lang, meta, title }) => {
+const Seo = ({ description, lang, meta, title, previewImg = undefined }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -11,6 +11,7 @@ const Seo = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
+            siteUrl
             author {
               name
             }
@@ -27,6 +28,10 @@ const Seo = ({ description, lang, meta, title }) => {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
   const pageTitle = title ? `${title} | ${defaultTitle}` : defaultTitle
+  const siteUrl = site.siteMetadata?.siteUrl
+  const image = previewImg
+    ? `${siteUrl}${previewImg}`
+    : `${siteUrl}/img/data-controller.svg`
 
   return (
     <Helmet
@@ -42,9 +47,7 @@ const Seo = ({ description, lang, meta, title }) => {
           content: metaDescription
         },
         // { name: 'facebook:site', content: '', },
-        // { name: 'image', property: 'og:image', content: image.og, },
-
-        // { name: `description`, content: metaDescription },
+        { name: 'image', property: 'og:image', content: image },
         {
           name: `linkedin:site`,
           content: site.siteMetadata?.social?.linkedin || ``
@@ -55,7 +58,6 @@ const Seo = ({ description, lang, meta, title }) => {
         // { name: 'twitter:site', content: `${site?.twitter}`, },
         { name: `twitter:title`, content: title },
         // { name: 'youtube:site', content: `${site?.youtube}`, },
-        { property: `og:description`, content: metaDescription },
         { property: `og:title`, content: title },
         { property: `og:type`, content: `website` }
       ].concat(meta)}

@@ -1,5 +1,6 @@
 ---
 title: Version 3.11 - Release Notes (Redshift, Locale, Proc Transpose)
+description: V3.11 of Data Controller includes Amazon Redshift support, a Locale switch, Data Lineage for Proc Transpose, and varoius UI & Performance enhancements.
 date: '2021-02-14 13:58:57'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
