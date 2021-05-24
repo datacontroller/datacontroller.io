@@ -26,7 +26,7 @@ This feature allows you to create a backend SAS program to generate the values f
 
 The SAS program can live on the directory, or it can also be in a SAS 9 Stored Process or Viya Job.  The dropdown can be "HARD" (user must select a value) or "SOFT" (user can also type their own value).
 
-![Dynamic Cells in SAS](https://docs.datacontroller.io/img/cell_validation1.png)
+![Dynamic Cells in SAS](./cell_validation1.png)
 
 More info in [documentation](https://docs.datacontroller.io/dynamic-cell-dropdown).
 
@@ -34,29 +34,29 @@ More info in [documentation](https://docs.datacontroller.io/dynamic-cell-dropdow
 
 This feature allows you to create complex queries to determine which groups can access which rows in which tables (either for the EDIT menu, VIEW menu or both).  If a user is in multiple groups, these rules are joined with an OR condition, allowing additional rows with additional group memberships.  The rules are also applied for data uploads, preventing users from modifying records that they do not have permission to access.
 
-![Row Level Security in Data Controller for SAS](https://docs.datacontroller.io/img/rls_table.png)
+![Row Level Security in Data Controller for SAS](rls_table.png)
 
 Full details available in the [documentation](https://docs.datacontroller.io/row-level-security).
 
 ## Dynamic Filtering
 
 Previously, when using the filter mechanism, all values were always returned in the selection box.
-![Data Controller for SAS previous selection box](https://docs.datacontroller.io/img/filter_dynamic_off.png)
+![Data Controller for SAS previous selection box](filter_dynamic_off.png)
 
 Now, when the dynamic where clause box is checked (which is the default), the values in the _second and subsequent_ filter clauses are filtered by the previous filter clause settings, eg:
-![](https://docs.datacontroller.io/img/filter_dynamic_on.png)
+![](filter_dynamic_on.png)
 
 ## Excel Formulas
 
 It is now possible to configure certain columns to be extracted as formulae, rather than raw values. The target column must be character, and it should be wide enough to support the longest formula in the source data. If the order of values is important, you should include a row number in your primary key.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Reg803vI2Ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+`video: [Retain Formulas when Loading Excel to SAS](https://www.youtube-nocookie.com/embed/Reg803vI2Ak)`
 
 Full configuration information in the [docs](https://docs.datacontroller.io/excel).
 
 ## Other Stuff
 
-Further updates since the [v3.11 release](https://datacontroller.io/version-3-11-release-notes-redshift-locale-proc-transpose) include:
+Further updates since the [v3.11 release](/version-3-11-release-notes-redshift-locale-proc-transpose) include:
 
 - Support for E8601DA and B8601DA date formats
 - Addition of a max-depth option in Data Lineage to enable exploration when the lineage is HUGE
@@ -66,4 +66,4 @@ Further updates since the [v3.11 release](https://datacontroller.io/version-3-11
 - Excel Exports are now enabled where SAS/ACCESS for PC Files is not licensed
 - Previously, not all Viya Users were being returned in the User Navigator.  They are now.
 
-Would you like to give Data Controller a whirl?  We're waiting to [hear from you](https://datacontroller.io/contact)!
+Would you like to give Data Controller a whirl?  We're waiting to [hear from you](/contact)!
