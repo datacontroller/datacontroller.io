@@ -3,25 +3,26 @@ slug: 'pricing'
 title: 'Pricing'
 heading: 'Data Controller Pricing'
 desc: 'Our Pricing Goals are to be Transparent, Simple, and Fair'
+description: Data Controller for SAS&reg; pricing - FREE for up to 5 users, and 500 Eur per User per Year up to 200 users.
 ---
 
 ## Pricing Overview
 
 - Up to 5 users - FREE
-- Up to 100 users - 1000 EUR per User per year
-- Above 100 users - 100k per year
+- Up to 200 users - 500 EUR per User per Year
+- Additional users over 200 - FREE
 
 ## Pricing Details
 
-Data Controller is FREE for up to 5 users, with "best endeavors" support, and without permission to re-use the data management macros. For these, a subscription is required.
+Data Controller is FREE for up to 5 users, with "best endeavours" support, and without permission to re-use the data management macros. For these, a subscription is required.
 
 Subscriptions are based on the number of Users - a user is a unique SAS account that has registered to the Data Controller product in any 12 month period. Meaning, if you have a 20 user subscription, only 20 unique users are able to use Data Controller during those 12 months.
 
-**The price is 1000 EUR per user per annum.**  The minimum purchase is 5 users.   The cost of additional user licenses is pro-rated by months remaining in the current annual subscription period.
+**The price is 500 EUR per user per annum.**  The minimum purchase is 10 users.   The cost of additional user licenses is pro-rated by months remaining in the current annual subscription period.
 
-Licences can be downgraded. Downgrades happen on licence anniversary, with a minimum decrease of 5 users. A decrease that results in a total user count below 5 users will revert to the free version.
+Licences can be downgraded. Downgrades happen on licence anniversary, with a minimum decrease of 10 users. 
 
-Above 100 users the price is capped, and a dedicated account manager is made available.
+Above 200 users the price is capped, and a dedicated account manager is made available.
 
 ## Discounts
 
