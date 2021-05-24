@@ -56,16 +56,22 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-embed-video',
+            options: {
+              width: 750,
+              related: false //Optional: Will remove related videos from the end of an embedded YouTube video.
+            }
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 630
             }
           },
           {
-            resolve: 'gatsby-remark-embed-video',
+            resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              width: 750,
-              related: false //Optional: Will remove related videos from the end of an embedded YouTube video.
+              wrapperStyle: 'margin-bottom: 1.0725rem'
             }
           }
         ]

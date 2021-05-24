@@ -25,3 +25,8 @@
     - `video: [VideoTitle](https://www.youtube.com/embed/2Xc9gXyf2G4)`
     - `youtube: https://www.youtube.com/watch?v=XrK3hmYO4ag`
     - `vimeo: https://vimeo.com/417808409`
+
+    If want to add inline image with text left align / right align use following syntax, and place image to /static
+
+    - <img class="alignright" src="/wp-content/uploads/2021/04/2IrsV7v.png" alt="Title" width="352" height="442" />
+    - <img class="alignleft" src="/wp-content/uploads/2021/04/2IrsV7v.png" alt="Title" width="352" height="442" />

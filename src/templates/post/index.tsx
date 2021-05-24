@@ -73,6 +73,9 @@ const StyledContent = styled.div`
     float: right;
     max-width: 100%;
     margin: 10px;
+    &.alignleft {
+      float: left;
+    }
     &.aligncenter {
       float: none;
       max-width: 90%;
