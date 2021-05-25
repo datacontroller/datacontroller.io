@@ -45,15 +45,18 @@ The loading routine for Redshift makes use of configurable bulkload options via 
 
 We've also made significant strides in our DevOps thanks to the [SASjs](https://sasjs.io) framework, brought the product into the [Analytium](https://sasapps.io) fold (UK SAS Partner), and - in addition to a standard pricing - we have put together a reseller pack. Again, contact [Allan Bowe](https://www.linkedin.com/in/allanbowe/) for further details. As a reminder, Data Controller is free for up to 5 users, and this includes all features:
 
-- Data Edit & Approval workflow with Audit history and ability to upload any Excel or CSV file to any SAS© registered table
+
+- Ability to upload any Excel or CSV file to any SAS© registered table
 - SAS 9 Table & Column level lineage with SVG & PNG export
-- SAS 9 Metadata Navigator
+- Data Edit & Approval workflow with Audit history
+- Export in CSV, Excel, SAS Datalines, DDL format
 - User Navigator (Viya + SAS 9)
-- Table viewer (with export in CSV, Excel, SAS Datalines and DDL in SAS, MSSQL and PostGres flavours)
+- SAS 9 Metadata Navigator
 - Data Quality rules
 - Data Dictionary
 - Data Catalog
 - Data Alerts
-- Support for all access engines, eg Netezza, Teradata, SPDE, Postgres, and native support for SQL Server and Redshift
 
-Note - the free offer does not permit re-use of the underlying macros, and support is 'best endeavors'. The fully supported version is just 1,000 EUR per user per year (min 5 users). For further details, contact [Allan Bowe](https://www.linkedin.com/in/allanbowe/).
+Thanks to SAS/ACCESS engines we can support all major databases, eg Netezza, Teradata, SPDE, Postgres, SQL Server, Redshift etc.
+
+Note - the free offer does not permit re-use of the underlying macros, and support is 'best endeavors'. Further details on the [pricing](/pricing) page, else contact [Allan Bowe](https://www.linkedin.com/in/allanbowe/).
