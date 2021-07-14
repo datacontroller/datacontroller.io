@@ -131,8 +131,11 @@ const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
               company&nbsp;based in the UK and operating since 2016.
               <br />
               The company supports the development of the Data Controller web
-              application and other <a href="https://sasapps.io">SAS Apps</a>,
-              and the Macro Cards range of websites listed below:
+              application and other{' '}
+              <a href="https://sasapps.io" title="SAS Apps">
+                SAS Apps
+              </a>
+              , and the Macro Cards range of websites listed below:
             </SectionDesc>
           </div>
         </div>

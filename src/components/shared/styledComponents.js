@@ -42,11 +42,7 @@ export const SectionDesc = styled.p`
   text-align: ${(props) => (props.center === 'no' ? 'left' : 'center')};
   opacity: ${(props) => props.opacity ?? 0.6};
   a {
-    color: #8ec63f;
-    text-decoration: none;
-    &:hover {
-      color: #bbdc8b;
-    }
+    color: inherit;
   }
 `
 const StyledSolidButton = styled.button`
