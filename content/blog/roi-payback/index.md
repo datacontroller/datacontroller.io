@@ -4,7 +4,7 @@ description: How much time & money could you save by implementing Data Controlle
 date: '2021-07-15 09:00:00'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe
-previewImg: './cell_validation1.png'
+previewImg: './roi.jpeg'
 tags:
   - ROI
   - Payback
