@@ -1,6 +1,6 @@
 ---
 title: ROI and Payback
-description: How much time & money could you save by implementing Data Controller? We help you caculate the ROI and Payback time of your investment.
+description: How much time & money could you save by implementing Data Controller? We help you calculate the ROI and Payback time of your software investment.
 date: '2021-07-15 09:00:00'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe
