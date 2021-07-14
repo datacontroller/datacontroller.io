@@ -1,6 +1,6 @@
 ---
 title: v3.12 Release – Four New Data Management Features
-description: Some description for this blog, to boost seo score
+description: Four fantastic new features have been added to Data Controller - row level security, dynamic cell dropdowns, excel formula support and dynamic filtering.
 date: '2021-05-13 09:00:00'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
