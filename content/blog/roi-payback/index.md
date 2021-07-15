@@ -29,6 +29,7 @@ It also includes the time spent unit testing that code, documenting any macros, 
 * Solution design
 * Allocating the development work
 * Preparing test data
+* Preparing the environment
 * Doing the actual development
 * Documenting the result
 * Code Review
