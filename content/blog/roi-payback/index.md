@@ -21,11 +21,21 @@ To assist with this process, we will explain all the areas where Data Controller
 
 ## #1 - Development Time
 
-This represents the time spent designing and writing the SAS code (or DI Job) that will take a business input and load it into an existing SAS table.  It could be a `proc import`, or an `extract` transform, or even a full-blown bespoke web application for capturing the particular input requirement.
+This represents the time spent designing and preparing the SAS code (or DI Job) that will take a business input and load it into an existing table - be that a database, a dataset, or in-memory CAS.  It could be loaded with a `proc import`, or an `extract` transform, or even a full-blown bespoke web application for capturing the particular input requirement.
 
-It also includes the time spent unit testing that code, documenting any macros, and parameterising it accordingly for the particular input (eg, the network share in which the input file will land).
+It also includes the time spent unit testing that code, documenting any macros, and parameterising it accordingly for the particular input (eg, the network share in which the input file will land).  This time could be spent by multiple stakeholders. To summarise:
 
-With Data Controller, this time is reduced to zero.  By taking metadata from the target table (columns, lengths, types, attributes such as NOT NULL) a grid is displayed dynamically into which end users can safely make changes, or drop files such as Excel or CSV with **zero code** (the data is extracted dynamically by JavaScript).
+* Preparing requirements
+* Solution design
+* Allocating the development work
+* Preparing test data
+* Doing the actual development
+* Documenting the result
+* Code Review
+* Writing test Cases
+* Running the tests
+
+With Data Controller, this time is reduced to **zero**.  By taking metadata from the target table (columns, lengths, types, attributes such as NOT NULL) a grid is displayed dynamically into which end users can safely make changes, or drop files such as Excel or CSV with **zero code** (the data is extracted dynamically by JavaScript).
 
 
 ## #2 - Deployment Time
