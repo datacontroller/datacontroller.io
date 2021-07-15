@@ -8,6 +8,7 @@ previewImg: './roi.jpeg'
 tags:
   - ROI
   - Payback
+  - Regulatory
 ---
 
 # ROI and Payback of Data Controller
