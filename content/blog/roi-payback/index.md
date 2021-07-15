@@ -42,7 +42,7 @@ This can play havoc with the batch jobs used to build them, which typically expe
 
 Failures in batch runs take time to troubleshoot and resolve, with knock-on impacts to downstream reporting teams.
 
-Data Controller sidesteps the problem by ensuring that data is validated on arrival - ie, the user is unable to upload invalid data.  At the same time, the process is flexible to ingest data with varying formats, so long as all the necessary columns are provided.
+Data Controller sidesteps the problem by ensuring that data is validated on arrival - ie, the user is unable to upload invalid data.  At the same time, the process is flexible enough to ingest data with varying formats, so long as all the necessary columns are provided.
 
 Batch incidents based on invalid files are therefore avoided.
 
