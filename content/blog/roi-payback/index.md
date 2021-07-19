@@ -43,7 +43,7 @@ With Data Controller, this time is reduced to **zero**.  By taking metadata from
 
 This represents the time taken to move jobs and programs from dev, through other SAS environments such as test, acceptance, and production.  As part of this, it's often necessary to produce release documentation, perform additional deployment steps (such as setup of landing areas, permissions), prepare backout scripts, and perhaps even attend a Change Management meeting to explain the upcoming updates.
 
-With Data Controller, again - this part is reduced to zero.  Unless there was a need to configure a table to be editable in a test / accept environment, it wouldn't need to be done (and if it was, it would be a config change via the interface, not an actual code change).
+With Data Controller, once installed - this part is reduced to zero.  Unless there was a need to configure a table to be editable in a test / accept environment, it wouldn't need to be done (and if it was, it would be a config change via the interface, not an actual code change).
 
 ## #3 Batch Incidents
 
@@ -99,7 +99,9 @@ The benefits of Data Controller in these areas are also threefold:
 
 * Reduced ongoing cost of operation (spreadsheets backed up securely with each dataload)
 * Reduce the cost of recertification with clear, controlled on-ramps from EUC to SAS
-* Reduced risk of fines through a well documented, IT controlled Data Governance process with embedded 4-eyes approval for every upload
+* Reduced risk of fines through a well documented, IT controlled, Data Governance process
+
+Unlike desktop based solutions (such as Enterprise Guide), Data Controller secures all code and business logic at the backend in a centralised location - which is far more secure, auditable, and maintainable then the use of local network drives.
 
 ## #6 Data Lineage
 
