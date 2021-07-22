@@ -21,7 +21,7 @@ As a new SaasNow customer, your Data Controller installation may be as easy as c
 
 ### Ease of Support
 
-With a partner as your first line of support, you can leverage a single process for all SAS-related requests, including Data Controller. For complex, non-standard issues, partners have the full and immediate support of the Data Controller for SAS®team.
+With a partner as your first line of support, you can leverage a single process for all SAS-related requests, including Data Controller. For complex, non-standard issues, partners have the full and immediate support of the Data Controller for SAS® team.
 
 ### Ease of Billing
 
