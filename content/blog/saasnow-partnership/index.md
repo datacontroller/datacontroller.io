@@ -59,3 +59,5 @@ Most SaasNow Viya cloud environments are provisioned and ready to use within 4 h
 
 If you would like to provision Data Controller for SAS® as part of your engagement with SaasNow, contact [daniel@saasnow.com](mailto:daniel@saasnow.com).
 
+_The SaaSNow version of this announcement is available [here](https://www.saasnow.com/news/data-controller-for-sas-now-available-on-saasnow/)_
+
