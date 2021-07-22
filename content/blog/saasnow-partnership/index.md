@@ -1,7 +1,7 @@
 ---
 title: SaasNow Partnership
 description: The Data Controller for SAS® team is pleased to announce a new partnership! Customers can now obtain Data Controller for SAS® directly from SaasNow - a respected SAS Partner based in the Netherlands.
-date: '2021-07-15 09:00:00'
+date: '2021-07-22 09:00:00'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe
 previewImg: './logo.png'
