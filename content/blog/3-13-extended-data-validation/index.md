@@ -23,7 +23,7 @@ In the [previous release](/3-12-four-new-data-management-features) we provided a
 
 This feature has now been extended, to allow the response to contain dropdowns for other cells in the same row.  Default values can also be provided for each additional dropdown.
 
-![extended values](./validation1.png)
+`video: [Retain Formulas when Loading Excel to SAS](https://www.youtube-nocookie.com/embed/rmES77aIr90)`
 
 To make this work, the SAS developer simply needs to write a SAS program that takes a source table named `work.source_row` (the row being edited) and creates two output tables:
 
