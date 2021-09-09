@@ -7,7 +7,7 @@ authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './validation1.png'
 tags:
   - Data Quality
-  - End User Computing
+  - Releases
   - SAS
 ---
 

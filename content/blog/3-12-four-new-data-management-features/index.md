@@ -9,6 +9,7 @@ tags:
   - Data Quality
   - End User Computing
   - Excel
+  - Releases
 ---
 
 Thanks to a customer investment, we have four fantastic new features!  These are:
