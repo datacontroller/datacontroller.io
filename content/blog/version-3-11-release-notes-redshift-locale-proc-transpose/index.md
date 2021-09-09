@@ -6,9 +6,9 @@ author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './1_5i1_LPEiMqqEuAmYhcmcIw.png'
 tags:
-  - licence
-  - redshift
+  - Redshift
   - Releases
+  - Data Lineage
 ---
 
 Following a busy few months, a number of new deployments and feedback from several customers we are <noframes></noframes>w ready to release version 3.11 of Data Controller for SAS©. The biggest news in terms of updates is the addition of the licence key. This enables us to offer Data Controller for up to 5 users **without charge**!

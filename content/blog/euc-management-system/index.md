@@ -10,8 +10,8 @@ tags:
   - End User Computing
   - EUC
   - Excel
-  - sas
-  - shadow it
+  - SAS
+  - Shadow IT
   - VBA
 ---
 

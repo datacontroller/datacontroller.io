@@ -7,6 +7,7 @@ authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './innovation.png'
 tags:
   - Innovation
+  - Partners
 ---
 
 Data Controller for SAS® was a finalist in the 2021 "Excellence in Innovation" award!

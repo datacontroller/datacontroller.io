@@ -6,11 +6,10 @@ author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './IMG-20190430-WA0049.jpg'
 tags:
-  - data controller
-  - data lineage
-  - metadata
-  - release management
-  - sas
+  - Data Lineage
+  - Metadata
+  - Release Management
+  - SAS
   - Use Cases
 ---
 

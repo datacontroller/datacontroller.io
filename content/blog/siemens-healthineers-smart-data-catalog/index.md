@@ -6,13 +6,12 @@ author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './siemenshealthineers.png'
 tags:
-  - data catalog
-  - data controller
-  - data lineage
-  - Data quality
+  - Data Catalog
+  - Data Lineage
+  - Data Quality
   - data warehouse
   - Excel
-  - sas
+  - SAS
   - Use Cases
   - VBA
 ---

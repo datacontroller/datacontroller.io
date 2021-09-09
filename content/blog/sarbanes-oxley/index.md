@@ -7,11 +7,11 @@ authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './Screenshot-from-2020-08-10-19-16-01.png'
 tags:
   - data controller
-  - data lineage
+  - Data Lineage
   - pcaob
   - Regulatory
   - sarbanes-oxley
-  - sas
+  - SAS
   - sox
 ---
 

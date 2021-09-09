@@ -6,11 +6,10 @@ author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './Group-1dt.png'
 tags:
-  - data controller
-  - Data quality
+  - Data Quality
   - DER Touristik
-  - enterprise guide
-  - sas
+  - Enterprise Guide
+  - SAS
   - Use Cases
 ---
 

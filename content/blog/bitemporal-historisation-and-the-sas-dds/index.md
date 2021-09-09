@@ -6,16 +6,16 @@ author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
 previewImg: './Screenshot-from-2020-08-06-22-40-55.png'
 tags:
-  - banking
-  - bitemporal
-  - data warehouse
-  - ddl
-  - dds
-  - erwin
-  - etl
-  - insurance
-  - sas
-  - telco
+  - Banking
+  - Bitemporal
+  - Data Warehouse
+  - DDL
+  - DDS
+  - Erwin
+  - ETL
+  - Insurance
+  - SAS
+  - Telco
 ---
 
 Does the SAS DDS support Bitemporal historisation? Why yes indeed, with the right transform and extract logic, and updates to the primary keys.
