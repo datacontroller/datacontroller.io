@@ -40,7 +40,7 @@ For Data Controller Consulting Projects, list price is 1200 EUR per day For Data
 
 ### Mailbox
 
-Our support mailbox (Zendesk) is available at support@analytium.co.uk - a trained Data Controller technician will respond to all queries within 8 business hours.  Business hours are Monday to Friday, 9am until 5pm Central European Time. We aim to meet these targets in 90% of all incidents reported.  Support issues will be worked on until a mutually agreed resolution is achieved, or until the customer requests the issue to be closed. If there is no response or update from a customer on an issue for more than 30 calendar days, the issue will be closed.
+Our support mailbox is available at support@datacontroller.io - a trained Data Controller technician will respond to all queries within 8 business hours.  Business hours are Monday to Friday, 9am until 5pm GMT. We aim to meet these targets in 90% of all incidents reported.  Support issues will be worked on until a mutually agreed resolution is achieved, or until the customer requests the issue to be closed. If there is no response or update from a customer on an issue for more than 30 calendar days, the issue will be closed.
 
 ### In Scope Support
 

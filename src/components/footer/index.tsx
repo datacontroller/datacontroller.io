@@ -17,7 +17,7 @@ const Footer = () => (
       <div className="col-md-3 me-md-5">
         <StyledHeading>Data Controller</StyledHeading>
         <StyledDesc>
-          Data Controller is a product of Analytium Ltd, a UK company with a
+          Data Controller is a product of 4GL Apps Ltd (Previously Bowe IO Ltd), a UK company with a
           focus on SAS Software,{' '}
           <StyledAnchor href="https://sasapps.io">Apps</StyledAnchor>, and
           Services.
