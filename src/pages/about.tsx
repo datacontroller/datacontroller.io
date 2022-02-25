@@ -127,8 +127,8 @@ const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
           <div className="offset-md-2 col-md-8">
             <SectionHeading center="no">About Data Controller</SectionHeading>
             <SectionDesc center="no">
-              Data Controller is sold through 4GL Apps Ltd (Previously Bowe IO Ltd), a
-              company&nbsp;based in the UK and operating since 2013.
+              Data Controller is sold through 4GL Apps Ltd (Previously Bowe IO
+              Ltd), a company&nbsp;based in the UK and operating since 2013.
               <br />
               The company supports the development of the Data Controller web
               application and other{' '}
