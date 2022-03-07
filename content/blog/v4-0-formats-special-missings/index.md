@@ -48,7 +48,9 @@ All of the usual Data Controller features are available for formats too, includi
 * Make changes in the web, or via Excel or CSV upload
 * Configure HOOK scripts to run before / after a change or approval
 
-![formats](/formats.png)
+![formats](edit_format_record.png)
+
+Information on configuration is available in the [documentation](https://docs.datacontroller.io/formats)
 
 
 ## View & Edit SAS Special Missing Numerics
