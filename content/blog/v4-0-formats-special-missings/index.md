@@ -39,14 +39,16 @@ Data Controller allows you to view and edit formats _directly_ in the catalog.  
 
 All of the usual Data Controller features are available for formats too, including:
 
-* Full-table (catalog) search for specific values
-* Export the DDL (in various flavours)
-* Download in Excel, CSV or Datalines formats
-* Create complex filters (and save filtered views)
-* Edit individual format entries on dedicated screen
-* Mark format entries for deletion
-* Make changes in the web, or via Excel or CSV upload
 * Configure HOOK scripts to run before / after a change or approval
+* Locking mechanism to avoid issues with parallel updates
+* Make changes in the web, or via Excel or CSV upload
+* Edit individual format entries on dedicated screen
+* Create complex filters (and save filtered views)
+* Full-table (catalog) search for specific values
+* Download in Excel, CSV or Datalines formats
+* Export the DDL (in various flavours)
+* Mark format entries for deletion
+
 
 ![formats](edit_format_record.png)
 
