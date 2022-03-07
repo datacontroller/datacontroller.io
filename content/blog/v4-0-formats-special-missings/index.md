@@ -1,5 +1,5 @@
 ---
-title: "v4.0 Release: Formats & Special Missings support"
+title: "v4.0 Release: Formats & Special Missings"
 description: This release provides support for viewing/editing Format Catalogs, plus the ability to work with special SAS missing numerics (.a, .b etc)
 date: '2022-03-07 09:00:00'
 author: 'Allan Bowe'
