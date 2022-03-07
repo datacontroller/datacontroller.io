@@ -63,6 +63,7 @@ These values can now be both viewed and edited in Data Controller following an u
 
 `video: [Retain Formulas when Loading Excel to SAS](https://www.youtube-nocookie.com/embed/ggrcNr23Jzw)`
 
+There is nothing extra to configure for special SAS numerics - they are simply available by default, for numeric cells.
 
 ## Audit History Table
 
@@ -70,10 +71,11 @@ Previously, transactional changes made to tables in Data Controller could only b
 
 The issue is that this information did not capture the original, unchanged records (necessary to support rollbacks), nor did it provide a central point for querying the entire change history of a particular variable / record over time.
 
-These issues are now resolved with the introduction of the MPE_AUDIT table.  The macro used to load this table is open source and available [here](https://core.sasjs.io/mp__storediffs_8sas.html).
+These issues are now resolved with the introduction of the MPE_AUDIT table.
 
 ![audit](audit.png)
 
+The macro used to load this table is open source and available [here](https://core.sasjs.io/mp__storediffs_8sas.html).
 
 ## Roadmap (7th March 2022)
 
