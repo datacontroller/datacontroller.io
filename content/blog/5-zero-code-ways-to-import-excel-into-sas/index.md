@@ -11,8 +11,9 @@ tags:
   - Excel
 ---
 
-<p>Your data is in Excel and you need to import it into SAS.  You googled, and discovered 500 different methods.  Which to choose?  We compare and contrast 5 approaches to this perennial problem.  Before we get onto that though - <strong>why</strong> is it such a problem?
-The crux of the issue is:</p> <h2>Flexibility vs Scalability</h2>
+Your data is in Excel and you need to import it into SAS.  You googled, and discovered 5000 different methods.  Which to choose?  We compare and contrast 5 approaches to this perennial problem.  Before we get onto that though - <strong>why</strong> is it such a problem?
+
+The crux of the issue is: <h2>Flexibility vs Scalability</h2>
 
 Excel, as you probably know, is incredibly flexible. Data can spread in all directions, move around, be positioned anywhere, on any cell, of any worksheet in a workbook. That workbook can have different names, exist in different locations, be of different types (xls, xlsx, xlsm). That's before we get down to whether the data arrives as values, formatted values, formulas, or [other dragons](https://www.linkedin.com/posts/allanbowe_data-engineers-in-your-experience-what-activity-6771408875544461312-Weqt). And the fact that, as it is typically stored on a shared filesystem, it can be changed by anyone, at any time.
 
@@ -35,7 +36,7 @@ The world of SAS can be broken into 3 major platforms:
 The options available to you for importing Excel will vary depending on the flavour you are using. How do you know which one you have? Try running the following code in SAS:
 
 ```sas
-filename mc url "<a href='"'httpsayoutub://raw.githubusercontent.com/sasjs/core/main/all.sas'>https://raw.githubusercontent.com/sasjs/core/main/all.sas</a>";
+filename mc url "https://raw.githubusercontent.com/sasjs/core/main/all.sas";
 %inc mc;
 %put %mf_getplatform();
 ```
@@ -56,9 +57,9 @@ Once the range is found, Data Controller will perform a series of automatic chec
 
 `vimeo: https://vimeo.com/417808409`
 
-Once the approver approves the change, the table is updated. There is a full audit history and you can even retrieve the original excel file that was submitted. The tool does NOT let you load <em>new</em> tables to SAS, nor does it let you modify the columns. The <em>model</em> is therefore protected by IT, whilst the <em>values</em> are managed by the business
+Once the approver approves the change, the table is updated. There is a full audit history and you can even retrieve the original excel file that was submitted. The tool does NOT let you load <em>new</em> tables to SAS, nor does it let you modify the columns. The <em>model</em> is therefore protected by IT, whilst the <em>values</em> are managed by the business.
 
-Data Controller is available for SAS Meta and SAS Viya. A Base SAS version is in development. Like what you see? Don't hesitate to [book a demo session](https://datacontroller.io) and meet the team!</p>
+Data Controller is available for all 3 SAS platforms (SAS Meta, SAS Viya, Base SAS). Like what you see? Don't hesitate to [book a demo session](https://datacontroller.io) and meet the team!
 
 ### 2 - Import Excel using SAS Studio
 
