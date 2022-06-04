@@ -3,7 +3,7 @@ slug: 'pricing'
 title: 'Pricing'
 heading: 'Data Controller Pricing'
 desc: 'Our Pricing Goals are to be Transparent, Simple, and Fair'
-description: Data Controller for SAS&reg; is FREE for up to 5 users, else 25 EUR per User per Month 
+description: Data Controller for SAS&reg; pricing starts from FREE, is fully TRANSPARENT, and - at Enterprise Level - totally FLEXIBLE.
 ---
 
 ## Packages
