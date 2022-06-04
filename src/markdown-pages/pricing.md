@@ -2,6 +2,7 @@
 slug: 'pricing'
 title: 'Pricing'
 heading: 'Data Controller Pricing'
+previewImg: './static/home_illustration2-00649b1f413e09cfec86a2afba69dacc.png'
 desc: 'Our Pricing Goals are to be Transparent, Simple, and Fair'
 description: Data Controller for SAS&reg; pricing starts from FREE, is fully TRANSPARENT, and - at Enterprise Level - totally FLEXIBLE.
 ---
