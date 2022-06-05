@@ -67,7 +67,7 @@ Alongside this we offer an optional, fixed-price support package which includes 
 
 Our support mailbox is available at support@datacontroller.io - a trained Data Controller technician will respond to all queries within 8 business hours. Business hours are Monday to Friday, 9am until 5pm GMT. 
 
-We aim to meet these targets in 90% of all incidents reported.  Support issues will be worked on until a mutually agreed resolution is achieved, or until the customer requests the issue to be closed. If there is no response or update from a customer on an issue for more than 30 calendar days, the issue will be closed.
+We aim to meet this target in 90% of all incidents reported.  Support issues will be worked on until a mutually agreed resolution is achieved, or until the customer requests the issue to be closed. If there is no response or update from a customer on an issue for more than 30 calendar days, the issue will be deemed closed.
 
 ### In Scope Support
 
@@ -95,7 +95,7 @@ Whilst Data Controller has been hardened over many years to deal with most data 
 
 #### New Features
 
-The Data Controller Support Team can assist with troubleshooting and issue support, but they cannot create additional functionality. In this case a request may be made to enhance the product, or our Professional Services may be engaged to deliver a bespoke solution.
+The Data Controller Support Team can assist with troubleshooting and issue support, but they cannot create additional functionality. In this case a request may be made to enhance the product (Developer Days), or our Professional Services may be engaged to deliver a bespoke solution.
 
 #### Integrations
 
