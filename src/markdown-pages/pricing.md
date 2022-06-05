@@ -13,7 +13,7 @@ Data Controller is available in three packages:
 
 | Community | Team | Enterprise |
 |---|---|---|
-|✅ All Features, except: | ✅ All features, including: | ✅ All Team Features, plus:|
+|✅ All Features except: | ✅ All Features, including: | ✅ All Team Features, plus:|
 |❌ File Uploads | ✅ File Uploads | ✅ Perpetual Licence |
 |❌ Limited to 15 rows| ✅ Unlimited Rows |✅ Repo Access |
 |❌ Limited Support|✅ Unlimited Support| ✅ Unlimited Users|
