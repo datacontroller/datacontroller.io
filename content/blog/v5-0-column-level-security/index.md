@@ -26,6 +26,7 @@ Version 5 also brings some additional goodies!
 * Support for Swedish (and other) Locales
 * Deploy Demo DC _without_ Admin Rights
 * Configurable Audit History Location
+* Password Protected Excel Import
 * DC_RESTRICT_EDITRECORD option
 * Submit reason in HISTORY
 * Shaded PK in VIEW
@@ -79,6 +80,10 @@ This has resulted in some voluminous output!
 
 It is now possible  (on a per-table basis) to [configure](https://docs.datacontroller.io/dcc-tables/#audit_libds) alternative audit tables, or to switch the feature off completely.
 
+### Password Protected Excel Import
+
+If your Excel is password protected, just provide the password during import to unlock and ingest it.  More information [here](https://docs.datacontroller.io/videos/#uploading-a-password-protected-excel-file).
+
 ### DC_RESTRICT_EDITRECORD Option
 
 We are informated that sometimes you would like to have the option to have FEWER options for inputting data!  Who are we to argue.  You can now disable the 'EDIT RECORD' dialog using [this option](https://docs.datacontroller.io/dcc-options/#dc_restrict_editrecord).
@@ -101,7 +106,9 @@ We zapped a few of these, notable ones:
 * Multiple Approver workflow not working
 * Special Missings in cell dropdowns
 * Special Missings in filters (BETWEEN + IN)
+* Special Missings in CSV uploads
 * Support for leading blanks in Excel uploads
+* Improved Streaming App support under strict CSP policy
 
 
 ## Model Changes
@@ -122,3 +129,4 @@ The following items are on our radar for 2022:
 * Data Rollback (from UI)
 * Data Controller API
 
+If you'd like to see something extra or something else entirely, you can also engage us to build it for you!  Our team specialises in [SAS App Development](https://sasapps.io).
