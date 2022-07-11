@@ -2,49 +2,83 @@
 slug: 'pricing'
 title: 'Pricing'
 heading: 'Data Controller Pricing'
+previewImg: './static/home_illustration2-00649b1f413e09cfec86a2afba69dacc.png'
 desc: 'Our Pricing Goals are to be Transparent, Simple, and Fair'
-description: Data Controller for SAS&reg; pricing - FREE for up to 5 users, and 500 Eur per User per Year up to 200 users.
+description: Data Controller for SAS&reg; pricing starts from FREE, is fully TRANSPARENT, and - at Enterprise Level - totally FLEXIBLE.
 ---
 
-## Pricing Overview
+## Packages
 
-- Up to 5 users - FREE
-- Up to 200 users - 500 EUR per User per Year
-- Additional users over 200 - FREE
+Data Controller is available in three packages:
 
-## Pricing Details
+| Community | Team | Enterprise |
+|---|---|---|
+|✅ All Features except: | ✅ All Features, including: | ✅ All Team Features, plus:|
+|❌ File Uploads | ✅ File Uploads | ✅ Perpetual Licence |
+|❌ Limited to 15 rows| ✅ Unlimited Rows |✅ Repo Access |
+|❌ Limited Support|✅ Unlimited Support| ✅ Unlimited Users|
+|💰 FREE, for 5 Users|💰 €25 / User / Month | 💰 Contact for Pricing|
 
-Data Controller is FREE for up to 5 users, with "best endeavours" support, and without permission to re-use the data management macros. For these, a subscription is required.
+</br>
+<i>Data Controller Development Days (to build new product features etc) are available for all plans at a price of 600 EUR per day.</i>
 
-Subscriptions are based on the number of Users - a user is a unique SAS account that has registered to the Data Controller product in any 12 month period. Meaning, if you have a 20 user subscription, only 20 unique users are able to use Data Controller during those 12 months.
 
-**The price is 500 EUR per user per annum.**  The minimum purchase is 10 users.   The cost of additional user licenses is pro-rated by months remaining in the current annual subscription period.
+### Community Package
 
-Licences can be downgraded. Downgrades happen on licence anniversary, with a minimum decrease of 10 users. 
+You can try Data Controller today (and forever), for up to 5 users, on ANY flavour of SAS - be that Viya, EBI, or Base.
 
-Above 200 users the price is capped, and a dedicated account manager is made available.
+All features are available except Excel / CSV uploads.  In terms of support, we'll do our best, however - we would prioritise paying customers / revenue-generating projects when it comes to closing tickets / investigating issues.
 
-## Discounts
+Other reasons to consider a paid plan:
 
-Discounts are available for multi-year purchases, also for purchases of multiple instances (eg Viya + SAS 9).
+* Permission to re-use the Data Management Macros (indefinitely)
+* Dedicated Frontend, vs streamed app (more performant)
+* Removal of 15 row limit on VIEW and EDIT screens
 
-- 2 years - 20% discount on 2nd year
-- 3+ years purchased - 40% discount on 3rd and subsequent years
-- Viya + SAS 9 - 50% discount on the additional licence (on top of yearly discounts).  Max user count will apply to both versions.
+### Team Package
 
-## Services
+The Team Package is based on the number of Users - a user is a unique SAS account that has registered to the Data Controller product in any 12 month period. Meaning, if you have a 20 user subscription, only 20 unique users are able to use Data Controller during those 12 months.
 
-For Data Controller Consulting Projects, list price is 1200 EUR per day For Data Controller Development Activities (new product features etc), list price is 600 EUR per day.
+The following points should be noted:
+
+* The minimum purchase is 20 users
+* Licences are annual
+* Any additional (mid-year) user licenses are pro-rated
+* Licences can be downgraded
+* Downgrades happen on licence anniversary
+
+Customers spending over 30k receive additional support services, such as:
+
+* assistance with debugging / troubleshooting other SAS Apps
+* development support for other SAS Apps
+* SASjs Framework support
+
+
+### Enterprise Package
+
+For large customers who prefer the ability to self-maintain, we can provide access to our source code repository and a perpetual license to re-use and build on it (for internal purposes).
+
+Alongside this we offer an optional, fixed-price support package which includes collaboration with your SAS & Web developers to help them extend and customise Data Controller for your business purposes.
+
 
 ## Support
 
 ### Mailbox
 
-Our support mailbox is available at support@datacontroller.io - a trained Data Controller technician will respond to all queries within 8 business hours.  Business hours are Monday to Friday, 9am until 5pm GMT. We aim to meet these targets in 90% of all incidents reported.  Support issues will be worked on until a mutually agreed resolution is achieved, or until the customer requests the issue to be closed. If there is no response or update from a customer on an issue for more than 30 calendar days, the issue will be closed.
+Our support mailbox is available at support@datacontroller.io - a trained Data Controller technician will respond to all queries within 8 business hours. Business hours are Monday to Friday, 9am until 5pm GMT. 
+
+We aim to meet this target in 90% of all incidents reported.  Support issues will be worked on until a mutually agreed resolution is achieved, or until the customer requests the issue to be closed. If there is no response or update from a customer on an issue for more than 30 calendar days, the issue will be deemed closed.
 
 ### In Scope Support
 
-Support is unlimited, but restricted to items that actually relate to the tool (eg we cannot help with permissions, or data issues, beyond the guidance in the documentation).  All support is provided remotely, using video calls / screen sharing technology. Examples of ‘in-scope’ - configuration advice, usage, troubleshooting, installation support, integration advice (actual integration work would be a consulting effort).
+Support is unlimited, but restricted to items that actually relate to the tool (eg we cannot help with permissions, or data issues, beyond the guidance in the documentation).  All support is provided remotely, using video calls / screen sharing technology. 
+
+Examples of ‘in-scope’ (not an exhaustive list):
+
+* configuration & usage advice
+* troubleshooting
+* installation support
+* integration advice (actual integrations are a consulting effort)
 
 ### Out of Scope Support
 
@@ -61,7 +95,7 @@ Whilst Data Controller has been hardened over many years to deal with most data 
 
 #### New Features
 
-The Data Controller Support Team can assist with troubleshooting and issue support, but they cannot create additional functionality. In this case a request may be made to enhance the product, or our Professional Services may be engaged to deliver a bespoke solution.
+The Data Controller Support Team can assist with troubleshooting and issue support, but they cannot create additional functionality. In this case a request may be made to enhance the product (Developer Days), or our Professional Services may be engaged to deliver a bespoke solution.
 
 #### Integrations
 
@@ -78,3 +112,4 @@ There may be situations where support cannot give immediate fixes, such as (but 
 ### Partner Purchases
 
 Where Data Controller is purchased directly from one of our partners, the partner may provide first line support as per your agreement with them.
+
