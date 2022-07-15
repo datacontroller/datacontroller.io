@@ -1,0 +1,2 @@
+(self.webpackChunkdata_controller_site=self.webpackChunkdata_controller_site||[]).push([[609],{9295:function(t,e,n){"use strict";n.d(e,{W3E:function(){return a}});var r=n(1046);function a(t){return(0,r.w_)({tag:"svg",attr:{version:"1.1",viewBox:"0 0 16 16"},child:[{tag:"path",attr:{d:"M15.5 8l-7.5-7.5v4.5h-8v6h8v4.5z"}}]})(t)}}}]);
+//# sourceMappingURL=31664189-d2d5e8df3ac2c400b448.js.map
