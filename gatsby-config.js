@@ -36,6 +36,14 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: 3,
+        matomoUrl: 'https://analytics.4gl.io/',
+        siteUrl: 'https://datacontroller.io/',
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./content/blog`,
