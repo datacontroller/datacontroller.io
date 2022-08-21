@@ -25,15 +25,15 @@ Data Controller is available in three packages:
 
 ### Community Package
 
-You can try Data Controller today (and forever), for up to 5 users, on ANY flavour of SAS - be that Viya, EBI, or Base.
+You can try Data Controller today (and forever) for FREE, for up to 5 users, on ANY flavour of SAS - be that Viya, EBI, or [SASjs Server](https://server.sasjs.io).
 
-All features are available except Excel / CSV uploads.  In terms of support, we'll do our best, however - we would prioritise paying customers / revenue-generating projects when it comes to closing tickets / investigating issues.
+In terms of support, we'll do our best, however - we would prioritise paying customers / revenue-generating projects when it comes to closing tickets / investigating issues.
 
 Other reasons to consider a paid plan:
 
 * Permission to re-use the Data Management Macros (indefinitely)
-* Dedicated Frontend, vs streamed app (more performant)
 * Removal of 15 row limit on VIEW and EDIT screens
+* Excel / CSV Upload feature enabled
 
 ### Team Package
 
@@ -47,19 +47,23 @@ The following points should be noted:
 * Licences can be downgraded
 * Downgrades happen on licence anniversary
 
-Customers spending over 30k receive additional support services, such as:
+Customers spending over 30k (100 users) receive additional support services, such as:
 
-* assistance with debugging / troubleshooting other SAS Apps
-* development support for other SAS Apps
-* SASjs Framework support
+* Support for other SAS-Powered Web Apps
+* SASjs Framework support 
+* 10% discount on 4GL Consultancy Days
 
+At 50k per year (166 users) there are additional benefits:
+
+* Additional users are free 
+* Dedicated account manager
+* 20% discount on 4GL Consultancy Days
 
 ### Enterprise Package
 
-For large customers who prefer the ability to self-maintain, we can provide access to our source code repository and a perpetual license to re-use and build on it (for internal purposes).
+For large customers who prefer the ability to self-maintain, for a fixed price of 150k, we give you full access to our source code repository and a perpetual license to fork and build on it (for internal purposes).  We will also train and support your SAS and Web developers in how to build and deploy (and extend) the application.  This price includes 1 year of support.
 
-Alongside this we offer an optional, fixed-price support package which includes collaboration with your SAS & Web developers to help them extend and customise Data Controller for your business purposes.
-
+There is no obligation to renew the support agreement - and you will maintain access to updates even if the support period expires.
 
 ## Support
 
