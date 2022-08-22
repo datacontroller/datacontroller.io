@@ -14,10 +14,10 @@ Data Controller is available in three packages:
 | Community | Team | Enterprise |
 |---|---|---|
 |✅ All Features except: | ✅ All Features, including: | ✅ All Team Features, plus:|
-|❌ File Uploads | ✅ File Uploads | ✅ Perpetual Licence |
-|❌ Limited to 15 rows| ✅ Unlimited Rows |✅ Repo Access |
-|❌ Limited Support|✅ Unlimited Support| ✅ Unlimited Users|
-|💰 FREE, for 5 Users|💰 €25 / User / Month | 💰 Contact for Pricing|
+|❌ File Uploads | ✅ File Uploads | ✅ Repo Access |
+|❌ Limited to 15 rows| ✅ Unlimited Rows |✅ Perpetual Licence  |
+|❌ Limited Support|✅ Unlimited Support| ✅ Perpetual Upgrades |
+|💰 FREE, for 5 Users|💰 €25 / User / Month | 💰 €150k One Time|
 
 </br>
 <i>Data Controller Development Days (to build new product features etc) are available for all plans at a price of 600 EUR per day.</i>
