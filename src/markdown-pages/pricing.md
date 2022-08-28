@@ -50,14 +50,14 @@ The following points should be noted:
 Customers spending over 30k (100 users) receive additional support services, such as:
 
 * Support for other SAS-Powered Web Apps
-* SASjs Framework support 
+* SASjs Framework support
 * 10% discount on 4GL Consultancy Days
 
 At 50k per year (166 users) there are additional benefits:
 
-* Additional users are free 
+* Additional users are free
 * Dedicated account manager
-* 20% discount on 4GL Consultancy Days
+* 15% discount on 4GL Consultancy Days
 
 ### Enterprise Package
 
@@ -69,13 +69,13 @@ There is no obligation to renew the support agreement - and you will maintain ac
 
 ### Mailbox
 
-Our support mailbox is available at support@datacontroller.io - a trained Data Controller technician will respond to all queries within 8 business hours. Business hours are Monday to Friday, 9am until 5pm GMT. 
+Our support mailbox is available at support@datacontroller.io - a trained Data Controller technician will respond to all queries within 8 business hours. Business hours are Monday to Friday, 9am until 5pm GMT.
 
 We aim to meet this target in 90% of all incidents reported.  Support issues will be worked on until a mutually agreed resolution is achieved, or until the customer requests the issue to be closed. If there is no response or update from a customer on an issue for more than 30 calendar days, the issue will be deemed closed.
 
 ### In Scope Support
 
-Support is unlimited, but restricted to items that actually relate to the tool (eg we cannot help with permissions, or data issues, beyond the guidance in the documentation).  All support is provided remotely, using video calls / screen sharing technology. 
+Support is unlimited, but restricted to items that actually relate to the tool (eg we cannot help with permissions, or data issues, beyond the guidance in the documentation).  All support is provided remotely, using video calls / screen sharing technology.
 
 Examples of ‘in-scope’ (not an exhaustive list):
 
