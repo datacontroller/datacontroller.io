@@ -24,7 +24,7 @@ Various fixes have also been delivered, including:
 * Removed error dialog when a library is empty
 * Loading of formats with different length settings
 * Suppress ABORT modal when dynamic filtering
-* Dynamic retreival of Server Context when deploying on SAS 9
+* Dynamic retrieval of Server Context when deploying on SAS 9
 * Fixes to various edge cases in the FILTER dialog
 * Display correct number of actual changed records (Previously capped at 200, the display amount)
 * Dropdown values on modified Edge instance are no longer "sticking" (we built a custom modal)
