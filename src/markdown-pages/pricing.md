@@ -14,9 +14,9 @@ Data Controller is available in three packages:
 | Community | Team | Enterprise |
 |---|---|---|
 |✅ All Features except: | ✅ All Features, including: | ✅ All Team Features, plus:|
-|❌ File Uploads | ✅ File Uploads | ✅ Repo Access |
-|❌ Limited to 15 rows| ✅ Unlimited Rows |✅ Perpetual Licence  |
-|❌ Limited Support|✅ Unlimited Support| ✅ Perpetual Upgrades |
+|❌ File Uploads | ✅ File Uploads | ✅ Perpetual Licence |
+|❌ Limited to 15 rows| ✅ Unlimited Rows |✅ Perpetual Upgrades  |
+|❌ Limited Support|✅ Dedicated Support| ✅ Optional Support |
 |💰 FREE, for 5 Users|💰 €25 / User / Month | 💰 €150k One Time|
 
 </br>
@@ -61,7 +61,7 @@ At 50k per year (166 users) there are additional benefits:
 
 ### Enterprise Package
 
-For large customers who prefer the ability to self-maintain, for a fixed price of 150k, we give you full access to our source code repository and a perpetual license to fork and build on it (for internal purposes).  We will also train and support your SAS and Web developers in how to build and deploy (and extend) the application.  This price includes 1 year of support.
+For large customers who prefer the ability to self-maintain, for a fixed price of 150k, we give you full and perpetual licence to use and build on the source code (for internal purposes).  We will also train and support your SAS and Web developers in how to build and deploy (and extend) the application.  This price includes 1 year of dedicated support.  Support from Year 2 onwards is optional, available with a 50% reduction from the Team Package price.
 
 There is no obligation to renew the support agreement - and you will maintain access to updates even if the support period expires.
 
