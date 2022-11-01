@@ -119,7 +119,7 @@ const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
     <Layout
       location={location}
       heading="Behind Data Controller"
-      desc="Data Controller is a product of 4GL Apps Ltd"
+      desc="Data Controller is a product of 4GL, a brand of Bowe IO Ltd"
     >
       <Seo title="About" />
       <Section color="black" bgColor="white">
@@ -127,8 +127,8 @@ const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
           <div className="offset-md-2 col-md-8">
             <SectionHeading center="no">About Data Controller</SectionHeading>
             <SectionDesc center="no">
-              Data Controller is sold through 4GL Apps Ltd (Previously Bowe IO
-              Ltd), a company&nbsp;based in the UK and operating since 2013.
+              Data Controller is sold through Bowe IO Ltd, a company&nbsp;based
+              in the UK and operating since 2013.
               <br />
               The company supports the development of the Data Controller web
               application and other{' '}

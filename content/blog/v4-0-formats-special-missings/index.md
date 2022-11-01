@@ -88,7 +88,6 @@ We continue to update and improve Data Controller.  Upcoming features include:
 * Data Controller on Viya 4
 * Data Controller on Desktop SAS (using [sasjs/server](https://github.com/sasjs/server))
 
-You can track our progress, and submit ideas, [here](https://github.com/orgs/4gl-apps/projects/2/views/5).
 
 <hr>
 

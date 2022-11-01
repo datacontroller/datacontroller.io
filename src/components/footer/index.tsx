@@ -17,8 +17,8 @@ const Footer = () => (
       <div className="col-md-3 me-md-5">
         <StyledHeading>Data Controller</StyledHeading>
         <StyledDesc>
-          Data Controller is a product of 4GL Apps Ltd (Previously Bowe IO Ltd),
-          a UK company with a focus on SAS Software,{' '}
+          Data Controller is a product of 4GL Apps, a brand of Bowe IO Ltd,
+          which is a UK company with a focus on SAS Software,{' '}
           <StyledAnchor href="https://sasapps.io">Apps</StyledAnchor>, and
           Services.
         </StyledDesc>
