@@ -11,15 +11,15 @@ tags:
 
 # v5.2 Release
 
-Whilst not a core feature of Data Controller, and only available on the SAS 9 EBI instance (not Viya or SASjs Server), many of you are telling us that your favourite feature is the Data Lineage explorer!
+Many of you are telling us that your favourite feature in Data Controller is the Data Lineage explorer!
 
-And recently it's been getting battle tested in some large environments with sizeable lineage trees. The (single) new feature in this release therefore is the ability to limit lineage depth before generating the lineage.
+And recently it's been getting battle tested in some large environments, with sizeable lineage trees. To avoid the need to wait for these trees to render, we've now added the ability to limit lineage depth _before_ generating the lineage.
 
 ![](collineage.png)
 
-We've also spent time in this release improving the responsiveness of Data Controller to suit different screen sizes. We've reduced the number of menu items from 5 to 3, and adjusted the way the menu works when Data Controller is accessed from devices such as mobile or tablet.
+We've also spent time improving the responsiveness of Data Controller to suit different screen sizes. We've reduced the number of menu items from 5 to 3, and adjusted the way the menu works when Data Controller is accessed from devices such as mobile or tablet.
 
-The following fixes have been deployed:
+Furthermore, the following fixes have been deployed:
 
 * Prevent hanging in column lineage when library id not found
 * Fix issue with "max_depth" not limiting depth in some cases
