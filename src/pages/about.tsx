@@ -170,7 +170,7 @@ const About: React.FC<PageProps<DataProps>> = ({ data, location }) => {
           aspects of the
           <br />
           SAS® software such as SAS® Programming, Administration, Risk
-          Dimensions, Viya, AF/SLC, and much more.
+          Dimensions, Viya, AF/SCL, and much more.
         </FeaturedDesc>
         <FeaturedDesc>
           This SAS® quiz allows the player to test their knowledge, challenge
