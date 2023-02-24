@@ -15,7 +15,7 @@ Have you ever examined a record in VIEW or EDIT and needed to compare against da
 
 With viewboxes, you can now create filtered views (both at column and record level) of up to 6 other tables and arrange them on the same screen.
 
-![](viewbox.png)
+![](viewbox_edit.png)
 
 The tables, filters, and grid position are all saved in the URL, so you can share your view with colleagues.  Primary key fields (determined by column constraints) are shaded.  Column ordering and visibility is configurable.  If the table is editable, it can be opened in edit mode in a new window.
 
