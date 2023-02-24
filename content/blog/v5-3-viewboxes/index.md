@@ -19,6 +19,8 @@ With viewboxes, you can now create filtered views (both at column and record lev
 
 The tables, filters, and grid position are all saved in the URL, so you can share your view with colleagues.  Primary key fields (determined by column constraints) are shaded.  Column ordering and visibility is configurable.  If the table is editable, it can be opened in edit mode in a new window.
 
+`video: [ViewBoxes in Data Controller for SAS](https://www.youtube-nocookie.com/embed/jPGkLRspODM)`
+
 As part of this release we also upgraded the [HandsOnTable](https://handsontable.com/customers/datacontroller) library, which allows us surface a new feature - "copy with header rows".  This can be found in the right click menu.
 
 
