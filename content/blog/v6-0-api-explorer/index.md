@@ -1,6 +1,6 @@
 ---
 title: "v6.0 Release: Viya API Explorer"
-description: Data Controller community tier now includes an API explorer!  We've also overhauled the (in)format ingestion capability, and enabled unlimited users on the community edition.
+description: Data Controller community tier now includes an API explorer!  We've also overhauled the (in)format ingestion capability, and revamped our pricing (now with unlimited users across all tiers).
 date: '2023-06-26 09:00:00'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
@@ -11,7 +11,7 @@ tags:
 
 # v6.0
 
-With a (Viya) API explorer, an overhauled (in)format ingestion capability, and unlimited (free) users - Data Controller v6 is a major release indeed!
+With a (Viya) API explorer, an overhauled (in)format ingestion capability, and unlimited users - Data Controller v6 is a major release indeed!
 
 ## Viya API Explorer
 
@@ -34,20 +34,13 @@ We would love YOUR feedback as to how we can extend this API explorer to make it
 
 
 
-## Unlimited Users (in Free Tier)
+## Unlimited Users
 
-If you've been following us for a while you've probably heard the '5 users free' tagline.  Well - you will hear it no more, as we now offer the community edition on an 'unlimited user' basis!
+If you've been following us for a while you've probably heard the '5 users free' tagline.  Well - you will hear it no more, as we now offer unlimited users for **all** tier levels!
 
-That's right, you can download Data Controller and use it across your entire enterprise TODAY, without spending a penny.
+That's right, you can download Data Controller (Community Edition) and use it across your entire enterprise TODAY, without spending a penny.
 
-If, however, you would like:
-
-* priority support
-* more than 15 VIEW rows
-* more than 5 EDIT rows
-* Excel uploads
-
-We ask that you engage us on a TEAM or ENTERPRISE plan.
+If, however, you would like priority support and full access to all features, we ask that you engage us on paid subscription plan.
 
 ## (IN)FORMAT Capabilities
 

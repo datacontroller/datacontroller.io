@@ -9,61 +9,29 @@ description: Data Controller for SAS&reg; pricing starts from FREE, is fully TRA
 
 ## Packages
 
-Data Controller is available in three packages:
+Data Controller is available in four packages, with no limits on number of users (since [v6](https://datacontroller.io/v6-0-api-explorer/)).  Data Controller can run on ANY flavour of SAS - be that Viya, EBI, or [SASjs Server](https://server.sasjs.io).
 
-| Community | Team | Enterprise |
-|---|---|---|
-|✅ All Features except: | ✅ All Features, including: | ✅ All Team Features, plus:|
-|❌ File Uploads | ✅ File Uploads | ✅ Perpetual Licence |
-|❌ Limited Rows| ✅ Unlimited Rows |✅ Perpetual Upgrades  |
-|❌ Limited Support|✅ Dedicated Support| ✅ Optional Support |
-|💰 FREE|💰 €25 / User / Month | 💰 €150k One Time|
+|                          | Community       | Bronze    | Silver    | Gold       |
+|--------------------------|-----------------|-----------|-----------|------------|
+| Number of Users          | Unlimited       | Unlimited | Unlimited | Unlimited  |
+| Libraries                | Unlimited       | Unlimited | Unlimited | Unlimited  |
+| Tables (per library)     | 35              | 100       | Unlimited | Unlimited  |
+| Rows (VIEW)              | 15              | 100       | Unlimited | Unlimited  |
+| Rows (UPLOAD)            | 5               | 100       | Unlimited | Unlimited  |
+| Rows (HISTORY)           | 15              | 100       | Unlimited | Unlimited  |
+| Lineage                  | 3 per day       | 100       | Unlimited | Unlimited  |
+| Viewboxes                | 1               | 3         | 6 (max)   | 6 (max)    |
+| Data Controller Support  | Best Endeavours | 8hr SLA   | 8hr SLA   | 4hr SLA    |
+| SASjs Support            | ❌               | ✅         | ✅         | ✅          |
+| In-house SAS App Support | ❌               | ❌         | ✅         | ✅          |
+| Developer Days           | ❌               | ❌         | ❌         | ✅          |
+| Consulting Days          | ❌               | ❌         | ❌         | ✅          |
+| Perpetual Licence Option | ❌               | ❌         | ❌         | ✅          |
+| Price                    | FREE            | 12k pa    | 25k pa    | Contact Us |
 
 </br>
-<i>Data Controller Development Days (to build new product features etc) are available for all plans at a price of 600 EUR per day.</i>
+_Data Controller Development Days (to build new product features etc) are available for all plans at a price of 600 EUR per day.  Consulting rates are published [here](https://sasapps.io/pricing)._
 
-
-### Community Package
-
-You can try Data Controller today (and forever) for FREE, for unlimited users, on ANY flavour of SAS - be that Viya, EBI, or [SASjs Server](https://server.sasjs.io).  The only restriction is the number of rows you can view / edit, and the ability to perform file uploads.
-
-In terms of support, we'll do our best, however - we would prioritise paying customers / revenue-generating projects when it comes to closing tickets / investigating issues.
-
-Other reasons to consider a paid plan:
-
-* Unlimited rows on VIEW and EDIT screens
-* Excel / CSV Upload feature enabled
-* Support Data Controller and SASjs
-
-### Team Package
-
-The Team Package is based on the number of Users - a user is a unique SAS account that has registered to the Data Controller product in any 12 month period. Meaning, if you have a 20 user subscription, only 20 unique users are able to use Data Controller during those 12 months.
-
-The following points should be noted:
-
-* The minimum purchase is 20 users
-* Licences are annual
-* Any additional (mid-year) user licenses are pro-rated
-* Licences can be downgraded
-* Downgrades happen on licence anniversary
-
-Customers spending over 30k (100 users) receive additional support services, such as:
-
-* Support for other SAS-Powered Web Apps
-* SASjs Framework support
-* 10% discount on 4GL Consultancy Days
-
-At 50k per year (166 users) there are additional benefits:
-
-* Additional users are free
-* Dedicated account manager
-* 15% discount on 4GL Consultancy Days
-
-### Enterprise Package
-
-For large customers who prefer the ability to self-maintain, for a fixed price of 150k, we give you full and perpetual licence to use and build on the source code (for internal purposes).  We will also train and support your SAS and Web developers in how to build and deploy (and extend) the application.  This price includes 2 years of dedicated support.
-
-There is no obligation to renew the support agreement - and you will maintain access to updates even if the support period expires.
 
 ## Support
 
