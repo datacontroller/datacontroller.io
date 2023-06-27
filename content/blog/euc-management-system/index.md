@@ -56,7 +56,7 @@ Before you go ahead and build / maintain your own ‘black box’ bespoke EUC re
 - A smooth and performant review and approve experience
 - A proven methodology for EUC capture
 - Extensive [documentation](https://docs.datacontroller.io)
-- Free for up to 5 users
+- Free Community Edition
 - [Formula Support](https://docs.datacontroller.io/excel)
 - Secured by SAS
 

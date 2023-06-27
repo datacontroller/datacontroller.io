@@ -17,7 +17,7 @@ Data Controller is available in three packages:
 |❌ File Uploads | ✅ File Uploads | ✅ Perpetual Licence |
 |❌ Limited to 15 rows| ✅ Unlimited Rows |✅ Perpetual Upgrades  |
 |❌ Limited Support|✅ Dedicated Support| ✅ Optional Support |
-|💰 FREE, for 5 Users|💰 €25 / User / Month | 💰 €150k One Time|
+|💰 UNLIMITED Users|💰 €25 / User / Month | 💰 €150k One Time|
 
 </br>
 <i>Data Controller Development Days (to build new product features etc) are available for all plans at a price of 600 EUR per day.</i>
@@ -25,15 +25,15 @@ Data Controller is available in three packages:
 
 ### Community Package
 
-You can try Data Controller today (and forever) for FREE, for up to 5 users, on ANY flavour of SAS - be that Viya, EBI, or [SASjs Server](https://server.sasjs.io).
+You can try Data Controller today (and forever) for FREE, for unlimited users, on ANY flavour of SAS - be that Viya, EBI, or [SASjs Server](https://server.sasjs.io).  The only restriction is the number of rows you can view / edit, and the ability to perform file uploads.
 
 In terms of support, we'll do our best, however - we would prioritise paying customers / revenue-generating projects when it comes to closing tickets / investigating issues.
 
 Other reasons to consider a paid plan:
 
-* Permission to re-use the Data Management Macros (indefinitely)
 * Removal of 15 row limit on VIEW and EDIT screens
 * Excel / CSV Upload feature enabled
+* Support Data Controller and SASjs
 
 ### Team Package
 
@@ -61,7 +61,7 @@ At 50k per year (166 users) there are additional benefits:
 
 ### Enterprise Package
 
-For large customers who prefer the ability to self-maintain, for a fixed price of 150k, we give you full and perpetual licence to use and build on the source code (for internal purposes).  We will also train and support your SAS and Web developers in how to build and deploy (and extend) the application.  This price includes 1 year of dedicated support.  Support from Year 2 onwards is optional, available with a 50% reduction from the Team Package price.
+For large customers who prefer the ability to self-maintain, for a fixed price of 150k, we give you full and perpetual licence to use and build on the source code (for internal purposes).  We will also train and support your SAS and Web developers in how to build and deploy (and extend) the application.  This price includes 2 years of dedicated support.
 
 There is no obligation to renew the support agreement - and you will maintain access to updates even if the support period expires.
 
@@ -81,7 +81,7 @@ Examples of ‘in-scope’ (not an exhaustive list):
 
 * configuration & usage advice
 * troubleshooting
-* installation support
+* installation / deployment support
 * integration advice (actual integrations are a consulting effort)
 
 ### Out of Scope Support

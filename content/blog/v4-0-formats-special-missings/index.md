@@ -91,4 +91,4 @@ We continue to update and improve Data Controller.  Upcoming features include:
 
 <hr>
 
-Did you know Data Controller is free for up to 5 users? [Contact us](/contact) for your copy!
+Did you know Data Controller Community Edition is free to use? [Contact us](/contact) for your copy!

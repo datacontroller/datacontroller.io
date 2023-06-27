@@ -58,4 +58,4 @@ These are the ads we will be running:
 ![](./lineage_sasaward_ms.png)
 ![](./model_sasaward_ms.png)
 
-Data Controller is free for up to 5 users.  If you'd like to give it a whirl, just [pop us a message](/contact)!
+Data Controller Community Edition is free to use.  If you'd like to give it a whirl, just [pop us a message](/contact)!

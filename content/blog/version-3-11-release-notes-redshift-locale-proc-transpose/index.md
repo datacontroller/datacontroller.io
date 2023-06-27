@@ -11,7 +11,7 @@ tags:
   - Data Lineage
 ---
 
-Following a busy few months, a number of new deployments and feedback from several customers we are <noframes></noframes>w ready to release version 3.11 of Data Controller for SAS©. The biggest news in terms of updates is the addition of the licence key. This enables us to offer Data Controller for up to 5 users **without charge**!
+Following a busy few months, a number of new deployments and feedback from several customers we are <noframes></noframes>w ready to release version 3.11 of Data Controller for SAS©. The biggest news in terms of updates is the addition of the licence key.
 
 ## Features
 
@@ -43,7 +43,7 @@ The loading routine for Redshift makes use of configurable bulkload options via 
 
 ## Other areas
 
-We've also made significant strides in our DevOps thanks to the [SASjs](https://sasjs.io) framework, brought the product into the [Analytium](https://sasapps.io) fold (UK SAS Partner), and - in addition to a standard pricing - we have put together a reseller pack. Again, contact [Allan Bowe](https://www.linkedin.com/in/allanbowe/) for further details. As a reminder, Data Controller is free for up to 5 users, and this includes all features:
+We've also made significant strides in our DevOps thanks to the [SASjs](https://sasjs.io) framework, brought the product into the [Analytium](https://sasapps.io) fold (UK SAS Partner), and - in addition to a standard pricing - we have put together a reseller pack. Again, contact [Allan Bowe](https://www.linkedin.com/in/allanbowe/) for further details. As a reminder, Data Controller features include:
 
 
 - Ability to upload any Excel or CSV file to any SAS© registered table
@@ -59,4 +59,4 @@ We've also made significant strides in our DevOps thanks to the [SASjs](https://
 
 Thanks to SAS/ACCESS engines we can support all major databases, eg Netezza, Teradata, SPDE, Postgres, SQL Server, Redshift etc.
 
-Note - the free offer does not permit re-use of the underlying macros, and support is 'best endeavors'. Further details on the [pricing](/pricing) page, else contact [Allan Bowe](https://www.linkedin.com/in/allanbowe/).
+Further details on the [pricing](/pricing) page, else contact [Allan Bowe](https://www.linkedin.com/in/allanbowe/).

@@ -19,11 +19,12 @@ Following on from the metadata explorer (SAS 9 EBI feature) we have been looking
 
 This lets you easily trigger the (GET) APIs and explore the responses without having to break open Postman or another development toolkit.  Here's an example of opening a Job and examining the SAS code:
 
-`video: [Browsing JSON content in Viya](https://vid.4gl.io/videos/embed/e284f815-a6dc-4998-80bd-152d54cb81a9)`
+<iframe title="Browsing Viya API in Data Controller" width="560" height="315" src="https://vid.4gl.io/videos/embed/e284f815-a6dc-4998-80bd-152d54cb81a9" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+
 
 Here we grab the raw JSON for pasting into VS Code:
 
-`video: [Grabbing JSON from Viya API](https://vid.4gl.io/w/42XmEfpYvCPDpdRjymAEPb)`
+<iframe title="Grabbing JSON from Viya APIs with Data Controller" width="560" height="315" src="https://vid.4gl.io/videos/embed/18914633-342b-48f1-9021-bb01a8b33198?title=0&amp;warningTitle=0" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
 
 And here we toggle the start / limit parameters to bring back more values:
 
