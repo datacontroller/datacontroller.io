@@ -19,15 +19,17 @@ Following on from the metadata explorer (SAS 9 EBI feature) we have been looking
 
 This lets you easily trigger the (GET) APIs and explore the responses without having to break open Postman or another development toolkit.  Here's an example of opening a Job and examining the SAS code:
 
-`video: [Browsing JSON content in Viya](browsing.mp4)`
+`video: [Browsing JSON content in Viya](https://vid.4gl.io/videos/embed/e284f815-a6dc-4998-80bd-152d54cb81a9)`
 
 Here we grab the raw JSON for pasting into VS Code:
 
-`video: [Grabbing JSON from Viya API](json.mp4)`
+`video: [Grabbing JSON from Viya API](https://vid.4gl.io/w/42XmEfpYvCPDpdRjymAEPb)`
 
 And here we toggle the start / limit parameters to bring back more values:
 
-`video: [Viya API start/end params](start-limit.mp4)`
+`video: [Viya API start/end params](https://vid.4gl.io/w/6aneY2cEWZf1LEdRheokVP)`
+
+We would love YOUR feedback as to how we can extend this API explorer to make it an even more useful tool!
 
 
 
@@ -58,7 +60,7 @@ The addition of these format types broke the data model we were using previously
 
 In fact, START can be null, and the format data can have complete duplicates (multilabel). Furthermore, the _order_ of records is important (notsorted).  Therefore we have applied a new key (TYPE,FMTNAME,FMTROW) where FMTROW is the index of the record of the format in question.
 
-This means if you insert a row in a format, Data Controller will see this as a CHANGE to all the rows underneath (if they are not duplicates).  This difference in behaviour, as well as the the change in the model, is the only "breaking change" in this release.  It will likely only affect you if you are using Excel or CSV to upload (in)format data.
+This means if you insert a row in a format, Data Controller will see this as a CHANGE to all the rows underneath (if they are not duplicates).  This difference in behaviour, as well as the the change in the model, is the "breaking change" in this release (hence major version bump).  It will likely only affect you though if you are using Excel or CSV to upload (in)format data.
 
 This primary key is also displayed (now) in VIEW mode.
 
@@ -86,6 +88,7 @@ Some of the isues we've zapped:
 * Enable data-catalog refresh of a single library when invalid libraries are present
 * Bug with delete-only uploads not appearing in the audit table
 * Prevent error being thrown when attempting an UNLOCK of an already-unlocked table
+* Showing Viya avater when web app is served from a different domain
 
 ## Roadmap
 
