@@ -1,10 +1,10 @@
 ---
-title: "v6.0 Release: Unlimited Users, Viya API Explorer"
-description: Data Controller community tier now includes unlimited users! We also added an API explorer (Viya only) and overhauled the (in)format ingestion capability as well as many smaller fixes and improvements.
+title: "v6.0 Release: Viya API Explorer"
+description: Data Controller community tier now includes an API explorer!  We've also overhauled the (in)format ingestion capability, and enabled unlimited users on the community edition.
 date: '2023-06-26 09:00:00'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
-previewImg: './viewbox.png'
+previewImg: './previewapi.png'
 tags:
   - Releases
 ---
