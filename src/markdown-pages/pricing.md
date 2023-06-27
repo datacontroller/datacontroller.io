@@ -15,9 +15,9 @@ Data Controller is available in three packages:
 |---|---|---|
 |✅ All Features except: | ✅ All Features, including: | ✅ All Team Features, plus:|
 |❌ File Uploads | ✅ File Uploads | ✅ Perpetual Licence |
-|❌ Limited to 15 rows| ✅ Unlimited Rows |✅ Perpetual Upgrades  |
+|❌ Limited Rows| ✅ Unlimited Rows |✅ Perpetual Upgrades  |
 |❌ Limited Support|✅ Dedicated Support| ✅ Optional Support |
-|💰 UNLIMITED Users|💰 €25 / User / Month | 💰 €150k One Time|
+|💰 FREE|💰 €25 / User / Month | 💰 €150k One Time|
 
 </br>
 <i>Data Controller Development Days (to build new product features etc) are available for all plans at a price of 600 EUR per day.</i>
@@ -31,7 +31,7 @@ In terms of support, we'll do our best, however - we would prioritise paying cus
 
 Other reasons to consider a paid plan:
 
-* Removal of 15 row limit on VIEW and EDIT screens
+* Unlimited rows on VIEW and EDIT screens
 * Excel / CSV Upload feature enabled
 * Support Data Controller and SASjs
 
