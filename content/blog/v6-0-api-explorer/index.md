@@ -27,7 +27,7 @@ Here we grab the raw JSON for pasting into VS Code:
 
 And here we toggle the start / limit parameters to bring back more values:
 
-`video: [Viya API start/end params](https://vid.4gl.io/w/6aneY2cEWZf1LEdRheokVP)`
+<iframe title="Adjusting the start and limit params in the Data Controller Viya API Explorer" width="560" height="315" src="https://vid.4gl.io/videos/embed/29cc7a32-75c5-4cd5-8938-b1a7d0e1575d" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
 
 We would love YOUR feedback as to how we can extend this API explorer to make it an even more useful tool!
 
