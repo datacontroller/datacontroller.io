@@ -1,47 +1,11 @@
 import React, { Component } from 'react'
 import {
-  FacebookShareButton,
-  FacebookMessengerShareButton,
-  FacebookMessengerIcon,
   LinkedinShareButton,
   TwitterShareButton,
-  PinterestShareButton,
-  VKShareButton,
-  OKShareButton,
-  TelegramShareButton,
-  WhatsappShareButton,
-  RedditShareButton,
   EmailShareButton,
-  TumblrShareButton,
-  LivejournalShareButton,
-  MailruShareButton,
-  ViberShareButton,
-  WorkplaceShareButton,
-  LineShareButton,
-  WeiboShareButton,
-  PocketShareButton,
-  InstapaperShareButton,
-  HatenaShareButton,
-  FacebookIcon,
   TwitterIcon,
   LinkedinIcon,
-  PinterestIcon,
-  VKIcon,
-  OKIcon,
-  TelegramIcon,
-  WhatsappIcon,
-  RedditIcon,
-  TumblrIcon,
-  MailruIcon,
-  EmailIcon,
-  LivejournalIcon,
-  ViberIcon,
-  WorkplaceIcon,
-  LineIcon,
-  PocketIcon,
-  InstapaperIcon,
-  WeiboIcon,
-  HatenaIcon
+  EmailIcon
 } from 'react-share'
 
 import styled from 'styled-components'
@@ -74,23 +38,6 @@ const Sharer = ({ title = '', url }) => {
         <LinkedinShareButton url={url}>
           <LinkedinIcon size={56} />
         </LinkedinShareButton>
-      </SocialButtonContainer>
-
-      <SocialButtonContainer>
-        <RedditShareButton
-          url={url}
-          title={title}
-          windowWidth={660}
-          windowHeight={460}
-        >
-          <RedditIcon size={56} />
-        </RedditShareButton>
-      </SocialButtonContainer>
-
-      <SocialButtonContainer>
-        <TelegramShareButton url={url} title={title}>
-          <TelegramIcon size={56} />
-        </TelegramShareButton>
       </SocialButtonContainer>
 
       <SocialButtonContainer>
