@@ -30,14 +30,14 @@ Data Controller is available in four packages, with no limits on number of users
 | Price                    | FREE            | 12k pa    | 25k pa    | Contact Us |
 
 </br>
-_Data Controller Development Days (to build new product features etc) are available for all plans at a price of 600 EUR per day.  Consulting rates are published [here](https://sasapps.io/pricing)._
+<i>Data Controller Development Days (to build new product features etc) are available for all plans at a price of 600 EUR per day.  Consulting rates are published <a href="https://sasapps.io/pricing">here</a>.</i>
 
 
 ## Support
 
 ### Mailbox
 
-Our support mailbox is available at support@datacontroller.io - a trained Data Controller technician will respond to all queries within 8 business hours. Business hours are Monday to Friday, 9am until 5pm GMT.
+Our support mailbox is available at support@datacontroller.io - a trained Data Controller technician will respond to all queries within 8 business hours (or 4 hours for customers on the Gold plan). Business hours are Monday to Friday, 9am until 5pm GMT.
 
 We aim to meet this target in 90% of all incidents reported.  Support issues will be worked on until a mutually agreed resolution is achieved, or until the customer requests the issue to be closed. If there is no response or update from a customer on an issue for more than 30 calendar days, the issue will be deemed closed.
 
@@ -54,7 +54,9 @@ Examples of ‘in-scope’ (not an exhaustive list):
 
 ### Out of Scope Support
 
-Our support goal is to help you by answering questions and solving problems that relate specifically to the Data Controller for SAS® software. Occasionally a situation may arise where the scope is outside of the support service, including (but not limited to) the items below.
+Our support goal is to help you by answering questions and solving problems that relate specifically to the Data Controller for SAS® software, SASjs, or other in-house SAS-Powered Web Apps per the subscription plan.
+
+Occasionally a situation may arise where the scope is outside of the support service, including (but not limited to) the items below.
 
 #### Data Issues
 
