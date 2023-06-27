@@ -7,6 +7,12 @@ desc: 'Our Pricing Goals are to be Transparent, Simple, and Fair'
 description: Data Controller for SAS&reg; pricing starts from FREE, is fully TRANSPARENT, and - at Enterprise Level - totally FLEXIBLE.
 ---
 
+<style>
+  table {
+    width: 100%;
+  }
+</style>
+
 ## Packages
 
 Data Controller is available in four packages, with no limits on number of users (since [v6](https://datacontroller.io/v6-0-api-explorer/)).  Data Controller can run on ANY flavour of SAS - be that Viya, EBI, or [SASjs Server](https://server.sasjs.io).
