@@ -27,7 +27,7 @@ Data Controller is available in four packages, with no limits on number of users
 | Developer Days           | ❌               | ❌         | ❌         | ✅          |
 | Consulting Days          | ❌               | ❌         | ❌         | ✅          |
 | Perpetual Licence Option | ❌               | ❌         | ❌         | ✅          |
-| Price                    | FREE            | 12k pa    | 25k pa    | Contact Us |
+| Price                    | FREE            | 12k EUR pa | 25k EUR pa| Contact Us |
 
 </br>
 <i>Data Controller Development Days (to build new product features etc) are available for all plans at a price of 600 EUR per day.  Consulting rates are published <a href="https://sasapps.io/pricing">here</a>.</i>
