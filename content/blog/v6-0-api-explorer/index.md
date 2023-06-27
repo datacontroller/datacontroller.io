@@ -58,6 +58,8 @@ This means if you insert a row in a format, Data Controller will see this as a C
 
 This primary key (TYPE, FMTNAME, FMTROW) is now also indicated in VIEW mode.
 
+![](./formats.png)
+
 ## Admin Screen
 
 We've added a new screen (under the username dropdown) to show system details as well as a handy set of shortcut buttons for refreshing the data catalog and downloading configuration files.
@@ -81,7 +83,7 @@ Some of the isues we've zapped:
 
 * Enable data-catalog refresh of a single library when invalid libraries are present
 * Prevent error when attempting an UNLOCK of an already-unlocked table
-* Show Viya avater when web app is served from a different domain
+* Show Viya avatar when web app is served from a different domain
 * Bug with delete-only uploads not appearing in the audit table
 * Show special missing values on VIEW screen
 
