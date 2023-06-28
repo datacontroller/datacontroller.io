@@ -77,7 +77,7 @@ We've added the ability to 'load more' history on the history page, as well as t
 
 ![](./loadmore.png)
 
-## Bugfixes
+## Fixes
 
 Some of the isues we've zapped:
 
