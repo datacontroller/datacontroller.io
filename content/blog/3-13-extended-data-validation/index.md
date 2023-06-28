@@ -44,4 +44,4 @@ In order to provide "native" support we update our load process to 'inject' a te
 
 <hr>
 
-Did you know Data Controller Community Edition is free? [Contact us](/contact) for your copy!
+Did you know Data Controller (Community Edition) is free, for unlimited users? [Contact us](/contact) for your copy!
