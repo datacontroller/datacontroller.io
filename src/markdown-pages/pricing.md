@@ -41,15 +41,56 @@ Data Controller is available in four packages, with no limits on number of users
 
 ## Support
 
-### Mailbox
+### Tickets
 
-Our support mailbox is available at support@datacontroller.io - a trained Data Controller technician will respond to all queries within 8 business hours (or 4 hours for customers on the Gold plan). Business hours are Monday to Friday, 9am until 5pm GMT.
+Our support goal is to get you back up and running as soon as possible in the case of any incidents. In addition, we are on hand to assist with troubleshooting, debugging, strategic advice, and to answer any questions in relation to your SAS App(s) - be they from admins, users, or developers.
 
-We aim to meet this target in 90% of all incidents reported.  Support issues will be worked on until a mutually agreed resolution is achieved, or until the customer requests the issue to be closed. If there is no response or update from a customer on an issue for more than 30 calendar days, the issue will be deemed closed.
+Tickets may be raised at either:
+
+1. Support Desk:  https://support.4gl.io
+2. Support Mailbox: support@datacontroller.io
+
+
+The corresponding severity level should also be specified, eg as follows:
+
+1. Level 1 - App is non-functional and cannot be used
+2. Level 2 - Critical issue, however the app is still functional
+3. Level 3 - Important issue
+4. Level 4 - Minor Issue
+
+The severity level will be initially assigned by the client, and is subject to the agreement of all parties. Circumstances may change during the lifecycle of an issue, and hence the priority may change (again, subject to all party agreement).
+
+"Response Time" means the number of hours between the logging of the Support Request, and the time that a technician begins active work on the Support Request. The beginning of active work by the technician can be evidenced by either the logon for Remote Access, or the e-mail by 4GL Ltd support staff.
+
+"Resolution Time" means the number of hours between the logging of the Support Request and the provision by 4GL of a fix, or satisfactory response.
+
+All times are deemed to be elapsed during UK Business hours (9am to 5pm), and following the UK holiday schedule.
+
+Severity Level 4 Support Requests will be investigated on a first in / first out basis, after all Level 1/2/3 Support Requests have been solved.
+
+Should a Severity Level 1 or 2 Support Request fail to be cleared within the Resolution Time, all applicable resources within 4GL will be called upon to assist in the issue.
+
+If an issue cannot be reproduced, then the Resolution Time will be suspended until such time as it happens again. Meanwhile, the support team will be on alert for the re-occurrence, and to foresee the actions needed to reproduce. On reproduction, the Resolution Time will start again at zero.
+
+We aim to meet these targets in 90% of all incidents reported.  Support issues will be worked on until a mutually agreed resolution is achieved, or until the customer requests the issue to be closed. If there is no response or update from a customer on an issue for more than 30 calendar days, the issue will be deemed closed.
+
+The following items are assumed:
+
+1. 4GL Ltd will have full access to the source code of any supported apps
+2. Any necessary systems access will be provided
+3. Development work will be performed offsite, using sample data
+4. The client is able to provide relevant artefacts (logs, sample data, clarifications)
+
+### Escalation
+If a ticket cannot be resolved within the agreed SLA conditions, escalation has to be started by the assigned support department. Escalation will be made via video call between managers at both the client and 4GL.
+
+Complaints on services should be directed to both the 4GL Engagement Manager and the client Application Owner.
+
 
 ### In Scope Support
 
-Support is unlimited, but restricted to items that actually relate to the tool (eg we cannot help with permissions, or data issues, beyond the guidance in the documentation).  All support is provided remotely, using video calls / screen sharing technology.
+Support is unlimited, but restricted to items that actually relate to the tool (eg we cannot help with permissions, or data issues, beyond the guidance in the documentation).  All support is provided remotely, using video calls / screen sharing technology.no
+
 
 Examples of ‘in-scope’ (not an exhaustive list):
 
