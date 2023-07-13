@@ -4,25 +4,23 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const Seo = ({ description, lang, meta, title, previewImg = undefined }) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            siteUrl
-            author {
-              name
-            }
-            social {
-              linkedin
-            }
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+          author {
+            name
+          }
+          social {
+            linkedin
           }
         }
       }
-    `
-  )
+    }
+  `)
 
   const author = site.siteMetadata?.author?.name
   const metaDescription = description || site.siteMetadata.description

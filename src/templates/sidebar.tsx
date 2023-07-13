@@ -10,7 +10,11 @@ import { SolidButton } from '../components/shared/styledComponents'
 const styles = css`
   color: #314351;
   opacity: 0.8;
-  font: 13px/1.65em 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial,
+  font:
+    13px/1.65em 'HelveticaNeue',
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
     sans-serif;
   font-size: 0.9rem;
 `
