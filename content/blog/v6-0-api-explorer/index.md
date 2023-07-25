@@ -79,7 +79,7 @@ We've added the ability to 'load more' history on the history page, as well as t
 
 ## Fixes
 
-Some of the isues we've zapped:
+Some of the issues we've zapped:
 
 * Enable data-catalog refresh of a single library when invalid libraries are present
 * Prevent error when attempting an UNLOCK of an already-unlocked table
