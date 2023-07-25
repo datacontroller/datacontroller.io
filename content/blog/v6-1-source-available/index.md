@@ -19,9 +19,9 @@ In addition we've added the ability to fully delete formats from catalogs, reduc
 
 ## Source Available
 
-Transparency is very important to us, as a team, and also for you - as you are trusting our software inside one of your most strategic platforms.  Whilst we have had a 'source available' policy for several years now, it has been on a private invite / request basis.  With version 6.1 it is now possible for ANY customer of SAS to freely evaluate our software without having to trust our build, or even to talk to us - you can create a release yourself, directly from the source repository, available here:  [https://git.datacontroller.io/dc/dc](https://git.datacontroller.io/dc/dc).  All the steps can be viewed in the project [release.yaml](https://git.datacontroller.io/dc/dc/src/branch/development/.gitea/workflows/release.yaml).
+Transparency is very important to us, as a team, and also for you - as you are trusting our software inside one of your most strategic platforms.  Whilst we have had a 'source available' policy for several years now, it has been on a private invite / request basis.  With version 6.1 it is now possible for ANY customer of SAS to freely evaluate our software without having to trust our build, or even to talk to us - you can create a release yourself, directly from the source repository, available here:  [https://git.datacontroller.io/dc/dc](https://git.datacontroller.io/dc/dc).  All the steps can be viewed in the project [release.yaml](https://git.datacontroller.io/dc/dc/src/branch/main/.gitea/workflows/release.yaml).
 
-The source is available on a [dual licence](https://git.datacontroller.io/dc/dc/src/branch/development/licence-non-commercial-datacontroller.pdf) (the same as our commercially sub-licenced grid system).
+The source is available on a [dual licence](https://git.datacontroller.io/dc/dc/src/branch/development/licence-non-commercial-datacontroller.pdf) (the same as our OEM-licenced grid system).
 
 ![](./gitea_logo.png)
 
@@ -32,15 +32,15 @@ We will continue to publish the SAS code in doxygen form at [https://code.dataco
 
 Unlike data in regular tables, formats must be modified and reloaded to catalogs in their entirety.  Our previous approach for deletions was to export the format, remove the offending rows, and reload the catalog.
 
-This is problematic when every row is marked deleted, as there is nothing to reload.  The [fix](https://github.com/sasjs/core/pull/342) was made in the underlying [mp_loadformat.sas](https://core.sasjs.io/mp__loadformat_8sas.html) SASjs Core macroj - now, when **all** format records are removed, `proc format` is invoked with the `delete` statement for those formats in the specified catalog.
+This is problematic when every row is marked deleted, as there is nothing to reload.  The [fix](https://github.com/sasjs/core/pull/342) was made in the underlying [mp_loadformat.sas](https://core.sasjs.io/mp__loadformat_8sas.html) SASjs Core macro - now, when **all** format records are removed, `proc format` is invoked with the `delete` statement, against the relevant formats in the relevant catalog.
 
 ## Reduced Audit Data
 
-Previously when loading an [audit table](https://docs.datacontroller.io/tables/mpe_audit/) we always included the entire row - including values that have not changed.
+Previously when loading an [audit table](https://docs.datacontroller.io/tables/mpe_audit/), we always included the entire row - including values that have not changed.
 
 This resulted in some very large audit tables, especially for tables with hundreds of columns!
 
-To limit data volumes, audit records are now _excluded_ when `MOVE_TYPE="M"` (modified record), `IS_PK=0` (not a primary key column) and `IS_DIFF=0` (no change to the value).
+To limit data volumes, audit data is now _excluded_ when `MOVE_TYPE="M"` (modified record), `IS_PK=0` (not a primary key column) and `IS_DIFF=0` (no change to the value).
 
 We will continue to post the full record where `MOVE_TYPE in ("A","D")` (added/deleted) so that the table state can be recovered from a backup of the table, or reverted back from a modified table.
 
@@ -50,7 +50,7 @@ We will continue to post the full record where `MOVE_TYPE in ("A","D")` (added/d
 Bugs we've blasted:
 
 * Frontend rejection of excel uploads with duplicates on the primary key
-* Missing `mf_existds()` macro issue when refreshing table lineage (SAS 9 EBI) or regenerating the Table Catalog.
+* Missing `mf_existds()` macro issue when refreshing Table Lineage (SAS 9 EBI) or regenerating the Table Catalog (all versions).
 
 
 
