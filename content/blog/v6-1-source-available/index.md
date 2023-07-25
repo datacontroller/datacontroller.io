@@ -4,7 +4,7 @@ description: Data Controller source code is now freely available for anyone to b
 date: '2023-07-25 09:00:00'
 author: 'Allan Bowe'
 authorLink: https://www.linkedin.com/in/allanbowe/
-previewImg: './gitea_logo.svg'
+previewImg: './gitea_logo.png'
 tags:
   - Releases
 ---
@@ -23,7 +23,7 @@ Transparency is very important to us, as a team, and also for you - as you are t
 
 The source is available on a [dual licence](https://git.datacontroller.io/dc/dc/src/branch/development/licence-non-commercial-datacontroller.pdf) (the same as our commercially sub-licenced grid system).
 
-![](./gitea_logo.svg)
+![](./gitea_logo.png)
 
 We will continue to publish the SAS code in doxygen form at [https://code.datacontroller.io](https://code.datacontroller.io). If you would like the ability to raise issues, or would like to submit a pull request, do get in touch via support@datacontroller.io and we will gladly create a user account for you.
 
