@@ -6,8 +6,6 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 
 import styled from 'styled-components'
 
-import Sharer from '../../components/sharer'
-
 export const StyledLink = styled((props) => <Link {...props} />)`
   text-decoration: none;
   color: black;
@@ -154,7 +152,6 @@ const Post = ({ post, location }) => {
           __html: post.html
         }}
       />
-      <Sharer title={post.frontmatter.title} url={location.href} />
     </div>
   )
 }
