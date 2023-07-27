@@ -43,6 +43,11 @@ const naviLinks = [
     name: 'Book Demo',
     url: '/contact/',
     active: 'no'
+  },
+  {
+    name: 'Source Code',
+    url: 'https://git.datacontroller.io/dc/dc',
+    active: 'no'
   }
 ]
 
